@@ -1,0 +1,43 @@
+.pilot-navbar {
+    background-color: #121214;
+    height: 104px;
+
+    .pilot-container {
+        .pilot-navbar-brand {
+            display: block;
+            float: left;
+
+            img {
+                margin-left: 240px;
+                margin-top: 22px;
+                margin-bottom: 26px;
+            }
+        }
+
+        .pilot-navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .pilot-nav-item:first-child {
+                margin-left: 272px;
+            }
+            .pilot-nav-item {
+                float: left;
+                margin-top: 22px;
+                margin-bottom: 26px;
+
+                .pilot-nav-link {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                .pilot-nav-link:hover {
+                    background-color: #111;
+                }
+            }
+        }
+    }
+}

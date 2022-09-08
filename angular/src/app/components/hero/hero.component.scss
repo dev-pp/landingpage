@@ -1,0 +1,47 @@
+#home {
+    background-image: url("/assets/images/devpp-bg-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            &.text-medium {
+                font-size: 1.5rem;
+                background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding-top: 150px;
+            }
+        }
+        h1 {
+            &.text-large {
+                background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding-top: 48px;                               
+            }
+        }
+        .purpose {
+            width: 100%;
+            text-align: center;
+            padding-left: 16vw;
+            padding-right: 16vw;
+
+            p {
+                letter-spacing: 0.72px;
+                color: #FAFAFA;
+                padding-top: 64px;
+            }
+        }
+        .mouse-scroll {
+            padding-top: 104px;
+            padding-bottom: 270px;
+            background-color: transparent;
+        }
+    }
+}
