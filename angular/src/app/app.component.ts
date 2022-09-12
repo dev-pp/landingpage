@@ -9,11 +9,41 @@ import { MenuItem } from './@thinkam/pilot/models/menu-item.model';
 export class AppComponent {
   readonly logoSrc: string = 'assets/images/devpp-logotipo.svg';
   readonly menus: Array<MenuItem> = [
-    { path: '', label: 'Home', link: '/' },
+    {
+      path: '',
+      label: 'Home',
+      link: '/',
+      isCTA: false
+    },
     {
       path: 'code-of-conduct',
       label: 'Código de Conduta',
-      link: 'code-of-conduct'
+      link: 'code-of-conduct',
+      isCTA: false
+    },
+    {
+      path: 'podcast',
+      label: 'Podcast',
+      link: '#podcast',
+      isCTA: false
+    },
+    {
+      path: 'vacancies',
+      label: 'Vagas',
+      link: '#vacancies',
+      isCTA: false
+    },
+    {
+      path: 'partnerships',
+      label: 'Parcerias',
+      link: '#partnerships',
+      isCTA: false
+    },
+    {
+      path: 'register',
+      label: 'FAÇA PARTE',
+      link: 'register',
+      isCTA: true
     }
   ];
 }
