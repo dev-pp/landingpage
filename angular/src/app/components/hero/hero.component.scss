@@ -23,7 +23,14 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                padding-top: 48px;                               
+                padding-top: 48px;    
+                width: 1000px;
+                font-size: 64px;  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         .purpose {

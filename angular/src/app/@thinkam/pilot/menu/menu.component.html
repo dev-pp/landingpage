@@ -12,8 +12,33 @@
                         {{menuItem.label}}
                     </a>
                 </li>
+                <li class="pilot-nav-item" data-anchor="data-anchor">
+                    <a class="pilot-nav-link">
+                        Podcast
+                    </a>
+                </li>
+                <li class="pilot-nav-item" data-anchor="data-anchor">
+                    <a class="pilot-nav-link">
+                        Podcast
+                    </a>
+                </li>
+                <li class="pilot-nav-item" data-anchor="data-anchor">
+                    <a class="pilot-nav-link">
+                        Vagas
+                    </a>
+                </li>
+                <li class="pilot-nav-item" data-anchor="data-anchor">
+                    <a class="pilot-nav-link">
+                        Parcerias
+                    </a>
+                </li>
+                <li class="pilot-nav-item" data-anchor="data-anchor">
+                    <a class="pilot-nav-link faca-parte">
+                        FAÇA PARTE
+                    </a>
+                </li>
             </ul>
-            <form *ngIf="linkSignUp" class="cta">
+            <!-- <form *ngIf="linkSignUp" class="cta">
                 <div class="button">
                     <a target="_blank" [href]="linkSignUp">{{titleSignUp}}</a>
                 </div>
@@ -22,12 +47,12 @@
                 <li *ngFor="let socialNetwork of socialNetworks" class="icon-social-network">
                     <i [ngClass]="socialNetwork.icon"></i>
                 </li>
-            </ul>
+            </ul> -->
         </div>
-        <button class="pilot-navbar-toggler" (click)="isCollapse = !isCollapse" type="button" data-bs-toggle="collapse"
+        <!-- <button class="pilot-navbar-toggler" (click)="isCollapse = !isCollapse" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="pilot-navbar-toggler-icon"></span>
-        </button>
+        </button> -->
     </div>
 </nav>
