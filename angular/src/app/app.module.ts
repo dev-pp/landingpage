@@ -10,6 +10,10 @@ import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.compon
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { MenuComponent } from './@thinkam/pilot/menu/menu.component';
+import { ReloadComponent } from './components/reload/reload.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { MenuComponent } from './@thinkam/pilot/menu/menu.component';
     CodeOfConductComponent,
     HomeComponent,
     HeroComponent,
-    MenuComponent
+    MenuComponent,
+    ReloadComponent,
+    PartnersComponent,
+    FormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

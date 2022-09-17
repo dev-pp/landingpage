@@ -1,0 +1,64 @@
+.reload-app{
+    background-color: #000813;
+    padding-left: 10%;
+
+    h1{
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, #FFFFFF 2.26%, #7589FF 80.78%);
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        margin-bottom: 41px;
+        letter-spacing: 1em;
+    }
+
+    h2{
+        color: white;
+        font-size: 32px;
+    }
+    // 7589FF
+    h3{
+        -webkit-text-stroke: 1px #7589FF;
+        color: transparent;
+        font-size: 158px;
+        letter-spacing: 0.4em;
+    }
+
+    p{
+        color: #FFF;
+        width: 530px;
+        font-size: 16px;
+    }
+    
+    
+    button{
+        margin-top: 65px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 24px;
+        gap: 30px;
+        font-size: 18px;
+
+    
+        width: 348px;
+        height: 56px;
+        color: white;
+        border: none;
+        background: #485DFF;
+        border-radius: 2px;
+    }
+
+    .meetuos{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .divpodcast{
+        margin-left: 50%;
+    }
+}
+
+h1{
+    border: 2px solid;
+    border-image-source: linear-gradient(180deg, rgba(117, 137, 255, 0.32) 0%, rgba(117, 137, 255, 0) 100%);
+}
