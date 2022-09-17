@@ -7,24 +7,19 @@
         <div class="collapse navbar-collapse" [ngClass]="{'show': isCollapse}" id="navbarSupportedContent">
             <ul class="pilot-navbar-nav">
                 <li *ngFor="let menuItem of menus" class="pilot-nav-item" data-anchor="data-anchor">
-                    <a class="pilot-nav-link" [ngClass]="{ 'active': isActive(menuItem.path) }" aria-current="page"
+                    <a class="pilot-nav-link" [ngClass]="{ 'active': isActive(menuItem.path), 'cta': menuItem.isCTA }" aria-current="page"
                         fragment="about" [routerLink]="[menuItem.link]">
                         {{menuItem.label}}
                     </a>
                 </li>
             </ul>
-            <form *ngIf="linkSignUp" class="cta">
-                <div class="button">
-                    <a target="_blank" [href]="linkSignUp">{{titleSignUp}}</a>
-                </div>
-            </form>
             <ul *ngIf="socialNetworks" class="social-networks">
                 <li *ngFor="let socialNetwork of socialNetworks" class="icon-social-network">
                     <i [ngClass]="socialNetwork.icon"></i>
                 </li>
             </ul>
         </div>
-        <button class="pilot-navbar-toggler" (click)="isCollapse = !isCollapse" type="button" data-bs-toggle="collapse"
+        <button *ngIf="isCollapse" class="pilot-navbar-toggler" (click)="isCollapse = !isCollapse" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="pilot-navbar-toggler-icon"></span>
