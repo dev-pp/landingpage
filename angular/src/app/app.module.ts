@@ -14,6 +14,7 @@ import { ReloadComponent } from './components/reload/reload.component';
 import { PartnersComponent } from './components/partners/partners.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EventCardsComponent } from './components/event-cards/event-cards.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ReloadComponent,
     PartnersComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    EventCardsComponent
   ],
   imports: [
     BrowserModule,
