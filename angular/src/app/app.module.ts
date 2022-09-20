@@ -15,6 +15,7 @@ import { PartnersComponent } from './components/partners/partners.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventCardsComponent } from './components/event-cards/event-cards.component';
+import { DigitalMediaComponent } from './components/digital-media/digital-media.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EventCardsComponent } from './components/event-cards/event-cards.compon
     PartnersComponent,
     FormComponent,
     FooterComponent,
-    EventCardsComponent
+    EventCardsComponent,
+    DigitalMediaComponent
   ],
   imports: [
     BrowserModule,

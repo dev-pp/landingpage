@@ -1,0 +1,57 @@
+.digital-media{
+    background-color: #000813;
+    color: white;
+    .container{
+        h1{
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            
+            background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            width: 330px;
+            font-weight: 700;
+        }
+        p{
+            padding-top: 22px;
+            font-weight: 400;
+            width: 292px;
+        }
+
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            
+            .icons-box{
+                background: #201E25;
+                border-radius: 16px;
+                width: 180px;
+                height: 180px;
+                margin: 40px;
+                
+                .youtube{
+                    padding: 58px 44px;
+                    width: 20px;
+                }
+            }
+            .youtube{
+                padding: 58px 44px;
+            }
+            .spotify{
+                padding: 50px 50px;
+            }
+            .google{
+                padding: 53px 53px;
+            }
+            .deezer{
+                padding: 75px 49px;
+            }
+
+        }
+    }
+}
