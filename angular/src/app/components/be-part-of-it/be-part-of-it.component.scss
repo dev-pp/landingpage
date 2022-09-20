@@ -1,0 +1,64 @@
+.be-part{
+    background-color: #000813;
+    height: 1107px;
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-align: center;
+    }
+    h1{
+        margin-top: 40px;
+        font-size: 239px;
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-align: center;
+
+    }
+    h3{
+        margin-top: 40px;
+        font-family: 'Chakra Petch';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+
+        /* identical to box height, or 138% */
+        text-align: center;
+        letter-spacing: 0.72px;
+
+        color: #FFFFFF;
+    }
+    .center{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        button{
+            text-align: center;
+            width: 348px;
+            height: 56px;
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            padding: 16px;
+            gap: 30px;
+            background: #485DFF;
+            border: none;
+            border-radius: 2px;
+    
+        }
+    }
+}

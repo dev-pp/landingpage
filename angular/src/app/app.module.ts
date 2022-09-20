@@ -16,6 +16,7 @@ import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventCardsComponent } from './components/event-cards/event-cards.component';
 import { DigitalMediaComponent } from './components/digital-media/digital-media.component';
+import { BePartOfItComponent } from './components/be-part-of-it/be-part-of-it.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DigitalMediaComponent } from './components/digital-media/digital-media.
     FormComponent,
     FooterComponent,
     EventCardsComponent,
-    DigitalMediaComponent
+    DigitalMediaComponent,
+    BePartOfItComponent
   ],
   imports: [
     BrowserModule,
