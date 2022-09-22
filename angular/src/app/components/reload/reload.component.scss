@@ -3,9 +3,13 @@
     padding-left: 10%;
 
     h1{
+        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
         -webkit-background-clip: text;
-        background-image: linear-gradient(to right, #FFFFFF 2.26%, #7589FF 80.78%);
         -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        
+        font-weight: 700;
         font-size: 40px;
         margin-bottom: 41px;
         letter-spacing: 1em;
@@ -15,7 +19,7 @@
         color: white;
         font-size: 32px;
     }
-    // 7589FF
+
     h3{
         -webkit-text-stroke: 1px #7589FF;
         color: transparent;
@@ -56,9 +60,4 @@
     .divpodcast{
         margin-left: 50%;
     }
-}
-
-h1{
-    border: 2px solid;
-    border-image-source: linear-gradient(180deg, rgba(117, 137, 255, 0.32) 0%, rgba(117, 137, 255, 0) 100%);
 }

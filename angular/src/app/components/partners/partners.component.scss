@@ -1,13 +1,17 @@
 .partners{
     background-color: #000813;
+    padding-left: 240px;
     h1{
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        
+        font-weight: 700;
+        font-size: 40px;
         background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        text-fill-color: transparent;
+        
     }
     .grid{
         display: grid;
@@ -21,8 +25,20 @@
             justify-content: center;
             align-items: center;
             border-radius:  0px 30px ;
-            margin: 30px;
+            margin: 30px 30px 30px 0;
             color: white;
+            p{
+                text-transform: uppercase;
+                background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 130%;
+                letter-spacing: 0.16em;
+            }
             // img{
 
             // }

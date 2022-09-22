@@ -2,65 +2,93 @@
     background-color: #000813;
     color: white;
 
+    h1{
+        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 80.78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        margin-left: 100px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+
     .container{
         display: grid;
         grid-template-columns: auto auto auto;
-        padding-left: 10%;
-        padding-right: 10%;
         .card{
-            border: 1px solid #7589FF;
+            margin-left: 100px;
             width: 440px;
-            padding: 24px;
-
-            hr{
-                border-top: 1px solid #7589FF;
-                width: 100%;
-                padding: -24px;
-            }
-
             h3{
-                font-size: 36px;
-            }
-            .data{
-                font-size: 120px;
-                background: linear-gradient(90deg, #7589FF 0%, #10E0DA 100%);
+                border-top: 1px solid #7589FF;
+                border-left: 1px solid #7589FF;
+                border-right: 1px solid #7589FF;
+
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 130%;
+
+                letter-spacing: 0.12em;
+                padding: 24px;
+                background: linear-gradient(91.06deg, #FFFFFF 2.26%, #00F0FF 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 text-fill-color: transparent;
             }
 
-            .hour{
-                font-size: 22px;
-                padding: 12px;
-            }
-            .city{
-                font-size: 20px;
-                padding-top: 12px;
-                padding-left: 12px;
-            }
-            .street{
-                font-size: 20px;
-                color:#615F69;
-                padding-bottom: 12px;
-                padding-left: 12px;
-            }
+            .container-card{
+                border: 1px solid #7589FF;
+                padding: 24px;
 
-            .flex{
-                display:flex;
+                .data{
+                    font-size: 120px;
+                    background: linear-gradient(90deg, #7589FF 0%, #10E0DA 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                }
+
+                .hour{
+                    font-size: 22px;
+                    padding: 12px;
+                }
+                .city{
+                    font-size: 20px;
+                    padding-top: 12px;
+                    padding-left: 12px;
+                }
+                .street{
+                    font-size: 20px;
+                    color:#615F69;
+                    padding-bottom: 12px;
+                    padding-left: 12px;
+                }
+
+                .flex{
+                    display:flex;
+                }
             }
         }
     }
 }
 
 .warning{
+    margin-left: 100px;
     display:flex;
     padding: 30px 0 30px 0;
-    width: 700px;
-}
+    width: 1000px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
 
-h1{
-    color: white;
+    /* identical to box height, or 26px */
+    letter-spacing: 0.72px;
+
+    color: #C5C5C5;
 }
 
 button{

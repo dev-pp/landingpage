@@ -2,21 +2,30 @@
     background-color: #000813;
     color: white;
     .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
         h1{
-            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
             letter-spacing: 0.16em;
+            width: 330px;
             text-transform: uppercase;
+
             
             background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            width: 330px;
-            font-weight: 700;
         }
         p{
             padding-top: 22px;
             font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.72px;
             width: 292px;
         }
 
@@ -26,28 +35,38 @@
             justify-content: center;
             align-items: center;            
             .icons-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
                 background: #201E25;
                 border-radius: 16px;
-                width: 180px;
                 height: 180px;
                 margin: 40px;
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    width: 180px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                }
                 
                 .youtube{
-                    padding: 58px 44px;
-                    width: 20px;
+                    width: 91px;
                 }
-            }
-            .youtube{
-                padding: 58px 44px;
-            }
-            .spotify{
-                padding: 50px 50px;
-            }
-            .google{
-                padding: 53px 53px;
-            }
-            .deezer{
-                padding: 75px 49px;
+
+                .spotify{
+                    width: 80px;
+                }
+                .google{
+                    width: 60px;
+                }
+                .deezer{
+                    width: 50px;
+                }
             }
 
         }
