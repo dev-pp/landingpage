@@ -1,11 +1,12 @@
 .digital-media{
-    background-color: #000813;
     color: white;
+    
     .container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center; 
+
         h1{
             font-weight: 700;
             font-size: 40px;
@@ -13,13 +14,13 @@
             letter-spacing: 0.16em;
             width: 330px;
             text-transform: uppercase;
-
             
             background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         p{
             padding-top: 22px;
             font-weight: 400;

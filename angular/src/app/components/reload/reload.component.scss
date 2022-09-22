@@ -1,5 +1,4 @@
 .reload-app{
-    background-color: #000813;
     padding-left: 10%;
 
     h1{
@@ -16,8 +15,23 @@
     }
 
     h2{
-        color: white;
+        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
         font-size: 32px;
+    }
+
+    .icons-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        background: #201E25;
+        width: 40px;
+        padding: 7px;
+        margin-right: 24px;
     }
 
     h3{
@@ -35,10 +49,10 @@
     
     
     button{
-        margin-top: 65px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: 65px;
         padding: 16px 24px;
         gap: 30px;
         font-size: 18px;

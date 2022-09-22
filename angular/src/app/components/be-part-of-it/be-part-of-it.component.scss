@@ -1,8 +1,12 @@
 .be-part{
-    *{margin: 0; padding: 0;}
+    background-image: url("../../../assets/images/background-image/BGS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-    background-color: #000813;
-    height: 1107px;
     h2{
         font-weight: 700;
         font-size: 40px;
