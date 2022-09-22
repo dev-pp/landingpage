@@ -1,19 +1,28 @@
 .footer{
     background-color: #000813;
     color: white;
-    padding: 6% 10% 5% 10%;
     display: grid;
     grid-template-columns: auto auto;
-    border-top: 1px solid #77A5FA;
+
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, #77A5FA, #FF1CF7);
+    border-image-slice: 1;
+
+    padding-left: 252px;
+    padding-top: 68px;
 
     .flex{
         display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 104px;
+
+        // p{
+        //     width: 383px;
+        // }
 
         img{
             width: 32px;
-            margin-top: -30px;
-            margin-left: 200px;
+             margin-top: -5px;
+             margin-left: 48px;
         }
     }
 
@@ -22,5 +31,6 @@
     }
     .copyright{
         color: #514E58;
+        margin-bottom: 50px;
     }
 }

@@ -1,20 +1,22 @@
 .be-part{
+    *{margin: 0; padding: 0;}
+
     background-color: #000813;
     height: 1107px;
     h2{
         font-weight: 700;
         font-size: 40px;
-        line-height: 130%;
+        text-align: center;
+
         background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-        text-align: center;
     }
     h1{
         margin-top: 40px;
-        font-size: 239px;
+        font-size: 500px;
         background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
