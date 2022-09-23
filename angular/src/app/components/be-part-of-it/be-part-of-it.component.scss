@@ -1,17 +1,17 @@
 .be-part{
-    background-image: url("../../../assets/images/background-image/BGS.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    .be-part-container{
+        background-image: url("../../../assets/images/background-image/BGS.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     h2{
         font-weight: 700;
         font-size: 40px;
         text-align: center;
-
         background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -19,7 +19,7 @@
         text-fill-color: transparent;
     }
     h1{
-        margin-top: 40px;
+        margin-top: -80px;
         font-size: 500px;
         background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
         -webkit-background-clip: text;
@@ -30,13 +30,13 @@
 
     }
     h3{
-        margin-top: 40px;
+        margin-top: -80px;
+        margin-bottom: 40px;
         font-family: 'Chakra Petch';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 33px;
-
         /* identical to box height, or 138% */
         text-align: center;
         letter-spacing: 0.72px;
@@ -64,7 +64,7 @@
             background: #485DFF;
             border: none;
             border-radius: 2px;
-    
+            margin-bottom: 340px;
         }
     }
 }

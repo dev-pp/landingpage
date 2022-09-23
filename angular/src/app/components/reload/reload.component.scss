@@ -2,7 +2,7 @@
     padding-left: 10%;
 
     h1{
-        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 17.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -15,12 +15,14 @@
     }
 
     h2{
-        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 70.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
         font-size: 32px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: 0.12em;
     }
 
     .icons-box{
@@ -45,6 +47,10 @@
         color: #FFF;
         width: 530px;
         font-size: 16px;
+        margin-top: 21px;
+        line-height: 33px;
+        font-weight: 400;
+        letter-spacing: 0.72px;
     }
     
     
@@ -73,5 +79,9 @@
 
     .divpodcast{
         margin-left: 50%;
+    }
+
+    .flex{
+        display: flex;
     }
 }

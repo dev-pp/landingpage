@@ -14,22 +14,29 @@
         display: flex;
         margin-bottom: 104px;
 
-        // p{
-        //     width: 383px;
-        // }
+        p{
+            width: 383px;
+            font-size: 18px;
+        }
 
         img{
             width: 32px;
-             margin-top: -5px;
-             margin-left: 48px;
+             margin-top: -15px;
+             margin-left: 12px;
         }
     }
 
+    .community{
+        font-size: 18px;
+    }
+
     img{
+        height: 56px;
         margin-bottom: 10px;
     }
     .copyright{
         color: #514E58;
+        font-size: 18px;
         margin-bottom: 50px;
     }
 }

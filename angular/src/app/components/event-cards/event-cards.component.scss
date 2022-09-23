@@ -2,15 +2,15 @@
     color: white;
 
     h1{
-        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 80.78%);
+        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 23.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         font-weight: 700;
         font-size: 40px;
         line-height: 130%;
-        margin-left: 100px;
+        margin-left: 240px;
+        margin-bottom: 80px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
     }
@@ -18,9 +18,10 @@
     .container{
         display: grid;
         grid-template-columns: auto auto auto;
+        margin-left: 240px;
         .card{
-            margin-left: 100px;
             width: 440px;
+            margin-bottom: 40px;
             h3{
                 border-top: 1px solid #7589FF;
                 border-left: 1px solid #7589FF;
@@ -72,11 +73,13 @@
                 }
             }
         }
+        .card:nth-child(n + 2) {
+            margin-left: 70px;}
     }
 }
 
 .warning{
-    margin-left: 100px;
+    margin-left: 240px;
     display:flex;
     padding: 30px 0 30px 0;
     width: 1000px;
@@ -84,9 +87,8 @@
     font-size: 20px;
     line-height: 130%;
 
-    /* identical to box height, or 26px */
     letter-spacing: 0.72px;
-
+    margin-bottom: 275px;
     color: #C5C5C5;
 }
 
