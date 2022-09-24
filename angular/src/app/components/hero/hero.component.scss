@@ -54,3 +54,16 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    #home { 
+        .content {
+            h1 {
+                &.text-large {
+                    font-size: 28px;
+                    width: 300px;
+                }
+            }
+        }    
+    }     
+}

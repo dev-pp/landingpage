@@ -66,3 +66,16 @@
             margin-top: 64px;
         }
     }
+
+@media screen and (max-width: 600px) {
+    .partners{
+        .partners-container{
+            padding-left: 24px;
+
+            .grid{
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+            }
+        }   
+    }

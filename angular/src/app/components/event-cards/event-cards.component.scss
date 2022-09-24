@@ -76,6 +76,8 @@
         .card:nth-child(n + 2) {
             margin-left: 70px;}
     }
+        .card:last-child {
+            margin-right: 70px;}
 }
 
 .warning{
@@ -100,4 +102,36 @@ button{
     width: 392px;
     padding: 16px 24px;
     gap: 145px;
+}
+
+@media screen and (max-width: 1728px) {
+    .event-card{
+        
+    
+
+        .container{
+
+            margin-left: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .event-card{
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+
+            .card{
+                margin-left: -70px;  
+            }
+            .card:nth-child(n + 2) {
+                margin-left: -70px;
+            }
+        }
+        .warning{
+            margin-left: 24px;
+        }
+    }
+
 }

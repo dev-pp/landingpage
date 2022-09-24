@@ -85,3 +85,27 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .reload-app{
+        h1{
+            background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 70.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 400px;
+            font-size: 24px;
+        }
+        
+        .meetuos{
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .divpodcast{
+            margin-left: 0;
+        }
+        h3{
+            display: none;
+        }
+    }
+}

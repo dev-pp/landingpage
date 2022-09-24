@@ -40,3 +40,16 @@
         margin-bottom: 50px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .footer{
+        padding-left: 24px;
+        grid-template-columns: auto;
+        .flex{
+            display: contents;
+            .cod-conduct{
+                display: none;
+            }
+        }
+    }
+}

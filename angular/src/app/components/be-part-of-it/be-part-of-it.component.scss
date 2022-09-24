@@ -68,3 +68,22 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .be-part{
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        h1{
+            width: 321px;
+            font-size: 100px;
+        }
+    }
+}
