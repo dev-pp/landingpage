@@ -37,7 +37,6 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
             }
 
             .container-card{
@@ -57,12 +56,13 @@
                     padding: 12px;
                 }
                 .city{
-                    font-size: 20px;
+                    font-size: 16px;
                     padding-top: 12px;
                     padding-left: 12px;
                 }
                 .street{
-                    font-size: 20px;
+                    font-weight: 400;
+                    font-size: 16px;
                     color:#615F69;
                     padding-bottom: 12px;
                     padding-left: 12px;
@@ -102,6 +102,7 @@ button{
     width: 392px;
     padding: 16px 24px;
     gap: 145px;
+    border: none;
 }
 
 @media screen and (max-width: 1728px) {
@@ -124,14 +125,24 @@ button{
 
             .card{
                 margin-left: -70px;  
+                width: 80%;
             }
             .card:nth-child(n + 2) {
                 margin-left: -70px;
             }
         }
         .warning{
+            display: block;
             margin-left: 24px;
+            width: 310px;
         }
+    }
+
+    button{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.06em;
     }
 
 }

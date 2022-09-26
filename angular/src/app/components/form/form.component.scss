@@ -18,8 +18,6 @@
             font-size: 40px;
             line-height: 130%;
             margin-bottom: 82px;
-
-            /* or 52px */
             letter-spacing: 0.02em;
         }
 
@@ -47,7 +45,6 @@
 }
     .form{
         margin-left: 200px;
-
         p{
             font-weight: 400;
             font-size: 24px;
@@ -115,8 +112,43 @@ button{
         padding-left: 24px;
         padding-bottom: 5%;
         grid-template-columns: auto;
+        .title-icons{
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 130%;
+
+                letter-spacing: 0.02em;
+                margin-bottom: 24px;
+            }
+            .conect{
+                font-size: 20px;
+                margin-bottom: 60px;
+            }
+        }
         .form{
-            margin-left: 12px;
+            margin-left: 0px;
+            p{
+                margin-top: 58px;
+                font-size: 20px;
+                margin-bottom: 56px;
+            }
         }
     }
+
+    input{
+        width: 90%;
+    }
+
+    select{
+        width: 90%;
+    }
+
+    button{
+        margin-top: 60px;
+        margin-bottom: 80px;
+        width: 90%;
+    }
+
+
 }

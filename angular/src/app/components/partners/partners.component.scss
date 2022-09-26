@@ -6,11 +6,11 @@
             text-transform: uppercase;
             font-weight: 700;
             font-size: 40px;
+            margin-bottom: 66px;       
             background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 20.78%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;     
-            margin-bottom: 66px;       
         }
         .grid{
             display: grid;
@@ -71,10 +71,25 @@
     .partners{
         .partners-container{
             padding-left: 24px;
+            padding-right: 24px;
+            h1{
+                background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 80.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text; 
+
+                font-weight: 700;
+                font-size: 24px;
+                letter-spacing: 0.16em;
+                margin-bottom: 60px;
+            }
 
             .grid{
                     display: grid;
                     grid-template-columns: auto;
+                    .card{
+                        width: 90%;
+                    }
                 }
             }
         }   

@@ -16,7 +16,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
     }
     h1{
         margin-top: -80px;
@@ -25,9 +24,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         text-align: center;
-
     }
     h3{
         margin-top: -80px;
@@ -73,17 +70,35 @@
     .be-part{
         h2{
             font-weight: 700;
-            font-size: 40px;
+            font-size: 20px;
             text-align: center;
-            background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
         }
         h1{
+            padding: 0;
+            margin: 0;
+            margin-left: 50px;
             width: 321px;
             font-size: 100px;
+        }
+        h3{
+            margin-top: 0px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.72px;
+        }
+        .center{
+            
+            button{
+                padding: 16px 24px;
+                gap: 30px;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 290px;
+                width: 312px;
+                height: 53px;
+            }
         }
     }
 }
