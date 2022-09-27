@@ -14,6 +14,9 @@ import { ReloadComponent } from './components/reload/reload.component';
 import { PartnersComponent } from './components/partners/partners.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EventCardsComponent } from './components/event-cards/event-cards.component';
+import { DigitalMediaComponent } from './components/digital-media/digital-media.component';
+import { BePartOfItComponent } from './components/be-part-of-it/be-part-of-it.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { FooterComponent } from './components/footer/footer.component';
     ReloadComponent,
     PartnersComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    EventCardsComponent,
+    DigitalMediaComponent,
+    BePartOfItComponent
   ],
   imports: [
     BrowserModule,

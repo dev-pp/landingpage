@@ -1,0 +1,81 @@
+.digital-media{
+    color: white;
+    
+    .container{
+        display: flex;
+        margin-left: 363px;
+        margin-bottom: 272px;
+
+        h1{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            letter-spacing: 0.16em;
+            width: 330px;
+            text-transform: uppercase;
+            
+            background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p{
+            padding-top: 22px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.72px;
+            width: 296px;
+        }
+
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;            
+            .icons-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                background: #201E25;
+                border-radius: 16px;
+                height: 180px;
+                margin: 20px;
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    width: 180px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                }
+                
+                .youtube{
+                    width: 91px;
+                }
+
+                .spotify{
+                    width: 80px;
+                }
+                .google{
+                    width: 64px;
+                }
+                .deezer{
+                    width: 72px;
+                    height: 52px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .digital-media{
+        display: none;
+    }
+}

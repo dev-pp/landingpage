@@ -1,31 +1,96 @@
 .partners{
-    background-color: #000813;
-    h1{
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        
-        background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+    .partners-container{
+        padding-left: 240px;
+        h1{
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 66px;       
+            background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 20.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;     
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left: -20px;
+            .card{
+                background-color: #201E25;
+                height: 152px;
+                width: 324px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius:  0px 30px ;
+                margin: 20px 20px 20px 20px;
+                color: white;
+                p{
+                    text-transform: uppercase;
+                    background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 130%;
+                    letter-spacing: 0.16em;
+                }
+                // img{
+
+                // }
+            }
+        }
     }
-    .grid{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        .card{
-            background-color: #201E25;
-            height: 152px;
-            width: 324px;
+        .center{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            border-radius:  0px 30px ;
-            margin: 30px;
-            color: white;
-            // img{
-
-            // }
+        }
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            gap: 30px;
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            border-radius: 2px;
+            color: #FFFFFF;
+            margin-bottom: 204px;
+            margin-top: 64px;
         }
     }
-}
+
+@media screen and (max-width: 600px) {
+    .partners{
+        .partners-container{
+            padding-left: 24px;
+            padding-right: 24px;
+            h1{
+                background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 80.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text; 
+
+                font-weight: 700;
+                font-size: 24px;
+                letter-spacing: 0.16em;
+                margin-bottom: 60px;
+            }
+
+            .grid{
+                    display: grid;
+                    grid-template-columns: auto;
+                    .card{
+                        width: 90%;
+                    }
+                }
+            }
+        }   
+    }

@@ -1,7 +1,14 @@
 .pilot-navbar {
-    background-color: #121214;
+    background-color: black;
     height: 104px;
 
+    .social-icons{
+        img{
+            width: 20px;
+            margin: 14px;
+            margin-top: 29px;
+        }
+    }
     .pilot-container {
         .pilot-navbar-brand {
             display: block;
