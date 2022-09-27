@@ -4,7 +4,7 @@ import { MenuItem } from './@thinkam/pilot/models/menu-item.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   readonly logoSrc: string = 'assets/images/devpp-logotipo.svg';

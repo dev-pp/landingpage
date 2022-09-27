@@ -10,6 +10,13 @@ import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.compon
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { MenuComponent } from './@thinkam/pilot/menu/menu.component';
+import { ReloadComponent } from './components/reload/reload.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EventCardsComponent } from './components/event-cards/event-cards.component';
+import { DigitalMediaComponent } from './components/digital-media/digital-media.component';
+import { BePartOfItComponent } from './components/be-part-of-it/be-part-of-it.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,14 @@ import { MenuComponent } from './@thinkam/pilot/menu/menu.component';
     CodeOfConductComponent,
     HomeComponent,
     HeroComponent,
-    MenuComponent
+    MenuComponent,
+    ReloadComponent,
+    PartnersComponent,
+    FormComponent,
+    FooterComponent,
+    EventCardsComponent,
+    DigitalMediaComponent,
+    BePartOfItComponent
   ],
   imports: [
     BrowserModule,
