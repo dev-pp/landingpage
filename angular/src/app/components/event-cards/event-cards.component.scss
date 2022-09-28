@@ -119,16 +119,68 @@ button{
 
 @media screen and (max-width: 600px) {
     .event-card{
+        h1{
+            background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 70.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 24px;
+            width: 312px;
+            margin-bottom: 60px;
+            margin-left: 24px;
+        }
         .container{
             display: grid;
             grid-template-columns: auto;
-
             .card{
-                margin-left: -70px;  
-                width: 80%;
+                h3{
+                    font-size: 32px;
+                }
+                margin-left: -100px;  
+                width: 342px;
+                .container-card{
+                    border: 1px solid #7589FF;
+                    padding: 24px;
+    
+                    .data{
+                        font-weight: 600;
+                        font-size: 88px;
+                        line-height: 130%;
+                    }
+    
+                    .hour{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 130%;
+
+                        letter-spacing: 0.72px;
+                        padding: 12px;
+                    }
+                    .city{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        letter-spacing: 0.72px;
+                        padding-top: 12px;
+                        padding-left: 12px;
+                    }
+                    .street{
+                        color:#615F69;
+                        padding-bottom: 12px;
+                        padding-left: 12px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        letter-spacing: 0.72px;
+                    }
+    
+                    .flex{
+                        display:flex;
+                    }
+                }
             }
             .card:nth-child(n + 2) {
-                margin-left: -70px;
+                margin-left: -100px;
             }
         }
         .warning{
@@ -139,6 +191,7 @@ button{
     }
 
     button{
+        width: 264px;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
