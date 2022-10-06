@@ -1,11 +1,11 @@
 .pilot-navbar {
-    background-color: black;
-
     .social-icons{
         img{
             width: 20px;
             margin: 14px;
-            margin-top: 29px;
+        }
+        .social-icon{
+            padding-left: 14px;
         }
     }
     .pilot-container {
@@ -32,6 +32,7 @@
                 float: left;
                 margin-top: 22px;
                 margin-bottom: 26px;
+                margin-left: 40px;
 
                 .pilot-nav-link {
                     display: block;
@@ -54,7 +55,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .pilot-navbar {
         background-color: black;
         .pilot-container {

@@ -1,6 +1,7 @@
 .event-card{
     color: white;
-
+    margin: 0;
+    padding: 0;
     h1{
         background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 23.78%);
         -webkit-background-clip: text;
@@ -15,10 +16,11 @@
         text-transform: uppercase;
     }
 
-    .container{
+    .content{
         display: grid;
         grid-template-columns: auto auto auto;
         margin-left: 240px;
+        background-color: black;
         .card{
             width: 440px;
             margin-bottom: 40px;
@@ -39,7 +41,7 @@
                 background-clip: text;
             }
 
-            .container-card{
+            .content-card{
                 border: 1px solid #7589FF;
                 padding: 24px;
 
@@ -107,17 +109,14 @@ button{
 
 @media screen and (max-width: 1728px) {
     .event-card{
-        
-    
-
-        .container{
+        .content{
 
             margin-left: 120px;
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .event-card{
         h1{
             background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 70.78%);
@@ -129,7 +128,7 @@ button{
             margin-bottom: 60px;
             margin-left: 24px;
         }
-        .container{
+        .content{
             display: grid;
             grid-template-columns: auto;
             .card{
@@ -138,7 +137,7 @@ button{
                 }
                 margin-left: -100px;  
                 width: 342px;
-                .container-card{
+                .content-card{
                     border: 1px solid #7589FF;
                     padding: 24px;
     
