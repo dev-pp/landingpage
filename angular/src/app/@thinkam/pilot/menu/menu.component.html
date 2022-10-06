@@ -4,11 +4,11 @@
       <img *ngIf="logoSrc" title="{{logoTitle}}" [src]="logoSrc" height="{{logoHeight}}" alt="{{logoAlt}}" />
       <span *ngIf="!logoSrc">{{logoTitle}}</span>
     </a>
-    <button class="navbar-toggler bg-light" (click)="show = !show" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" (click)="show = !show" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{'show': show}" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav pilot-navbar-nav">
         <li *ngFor="let menuItem of menus" class="pilot-nav-item" data-anchor="data-anchor">
           <a class="pilot-nav-link" [ngClass]="{ 'active': isActive(menuItem.path), 'cta': menuItem.isCTA }" aria-current="page"
               fragment="about" [routerLink]="[menuItem.link]">

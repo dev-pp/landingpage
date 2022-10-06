@@ -1,6 +1,5 @@
 .pilot-navbar {
     background-color: black;
-    height: 104px;
 
     .social-icons{
         img{
@@ -52,4 +51,39 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 600px) {
+    .pilot-navbar {
+        background-color: black;
+        .pilot-container {
+            button{
+                margin-top: 32px;
+                margin-left: 118px;
+            }
+            .pilot-navbar-nav{
+                .pilot-nav-item {
+                    .pilot-nav-link {
+                        color: white;
+                        width: 200px;
+                        padding: 0;
+                        margin-left: -100px;
+                        text-align: left;
+                    }
+                    .cta{
+                        color: #FC4FF6
+                    }
+                }
+            }
+            .pilot-navbar-brand{
+                img{
+                    height: 40px;
+                    margin: 14px;
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+
 }
