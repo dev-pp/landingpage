@@ -20,8 +20,9 @@
         display: grid;
         grid-template-columns: auto auto auto;
         margin-left: 240px;
-        background-color: black;
+        margin-top: -90px;
         .card{
+            background-color: black;
             width: 440px;
             margin-bottom: 40px;
             h3{
@@ -32,6 +33,8 @@
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 130%;
+
+                margin-bottom: -0.5rem;
 
                 letter-spacing: 0.12em;
                 padding: 24px;
