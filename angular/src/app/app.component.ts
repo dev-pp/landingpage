@@ -16,12 +16,6 @@ export class AppComponent {
       isCTA: false
     },
     {
-      path: 'code-of-conduct',
-      label: 'Código de Conduta',
-      link: 'code-of-conduct',
-      isCTA: false
-    },
-    {
       path: 'podcast',
       label: 'Podcast',
       link: '#podcast',

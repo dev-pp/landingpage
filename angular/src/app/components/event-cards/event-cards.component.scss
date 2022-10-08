@@ -1,9 +1,10 @@
-.event-card{
+.event-card {
     color: white;
     margin: 0;
     padding: 0;
-    h1{
-        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 23.78%);
+
+    h1 {
+        background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 23.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -17,19 +18,21 @@
         text-transform: uppercase;
     }
 
-    .content{
+    .content {
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-left: 240px;
+        margin-left: 8vw;
         margin-top: -90px;
-        .card{
-            background-color:  #010814;
-            width: 440px;
+
+        .card {
+            background-color: #010814;
+            width: 24vw;
             margin-bottom: 40px;
-            h3{
-                border-top: 1px solid #7589FF;
-                border-left: 1px solid #7589FF;
-                border-right: 1px solid #7589FF;
+
+            h3 {
+                border-top: 1px solid #7589ff;
+                border-left: 1px solid #7589ff;
+                border-right: 1px solid #7589ff;
 
                 font-weight: 600;
                 font-size: 32px;
@@ -39,63 +42,72 @@
 
                 letter-spacing: 0.12em;
                 padding: 24px;
-                background: linear-gradient(91.06deg, #FFFFFF 2.26%, #00F0FF 100%);
+                background: linear-gradient(91.06deg, #ffffff 2.26%, #00f0ff 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
 
-            .content-card{
-                border: 1px solid #7589FF;
-                padding: 24px;
+            .content-card {
+                border: 1px solid #7589ff;
+                padding: 0 1rem 1rem;
 
-                .data{
-                    font-size: 120px;
-                    background: linear-gradient(90deg, #7589FF 0%, #10E0DA 100%);
+                .data {
+                    font-size: 4rem;
+                    background: linear-gradient(90deg, #7589ff 0%, #10e0da 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    max-height: 32vh;
                 }
 
-                .data-mid{
-                    font-size: 120px;
-                    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+                .data-mid {
+                    font-size: 4rem;
+                    background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
+                    max-height: 32vh;
                 }
 
-                .hour{
-                    font-size: 22px;
-                    padding: 12px;
+                .hour {
+                    font-size: 1.3rem;
                 }
-                .city{
+
+                .address {
+                    min-height: 12vh;   
+                }
+
+                .city {
                     font-size: 16px;
-                    padding-top: 12px;
                     padding-left: 12px;
+                    margin-bottom: 0px !important;                 
                 }
-                .street{
+                .street {
                     font-weight: 400;
                     font-size: 16px;
-                    color:#615F69;
+                    color: #615f69;
                     padding-bottom: 12px;
                     padding-left: 12px;
+                    min-height: 14vh;
+                    margin-bottom: 0px !important;
                 }
-
-                .flex{
-                    display:flex;
+                .flex {
+                    display: flex;
                 }
             }
         }
         .card:nth-child(n + 2) {
-            margin-left: 70px;}
+            margin-left: 70px;
+        }
     }
-        .card:last-child {
-            margin-right: 70px;}
+    .card:last-child {
+        margin-right: 70px;
+    }
 }
 
-.warning{
+.warning {
     margin-left: 240px;
-    display:flex;
+    display: flex;
     padding: 30px 0 30px 0;
     width: 1000px;
     font-weight: 500;
@@ -105,32 +117,32 @@
     letter-spacing: 0.72px;
     margin-bottom: 275px;
     margin-top: 30px;
-    color: #C5C5C5;
+    color: #c5c5c5;
 }
 
-button{
-    background: #485DFF;
+button {
+    background: #485dff;
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
     border-radius: 2px;
-    width: 392px;
+    width: 20vw;
     padding: 16px 24px;
     gap: 145px;
     border: none;
 }
 
 @media screen and (max-width: 1728px) {
-    .event-card{
-        .content{
+    .event-card {
+        .content {
             margin-left: 120px;
         }
     }
 }
 
 @media screen and (max-width: 800px) {
-    .event-card{
-        h1{
-            background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 70.78%);
+    .event-card {
+        h1 {
+            background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 70.78%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -139,31 +151,31 @@ button{
             margin-bottom: 60px;
             margin-left: 24px;
         }
-        .content{
+        .content {
             display: grid;
             grid-template-columns: auto;
-            .card{
-                h3{
+            .card {
+                h3 {
                     font-size: 32px;
                 }
-                margin-left: -100px;  
+                margin-left: -100px;
                 width: 342px;
-                .content-card{
-                    border: 1px solid #7589FF;
+                .content-card {
+                    border: 1px solid #7589ff;
                     padding: 24px;
-    
-                    .data{
+
+                    .data {
                         font-weight: 600;
                         font-size: 88px;
                         line-height: 130%;
                     }
-                    .data-mid{
+                    .data-mid {
                         font-weight: 600;
                         font-size: 88px;
                         line-height: 130%;
                     }
-    
-                    .hour{
+
+                    .hour {
                         font-weight: 500;
                         font-size: 22px;
                         line-height: 130%;
@@ -171,7 +183,7 @@ button{
                         letter-spacing: 0.72px;
                         padding: 12px;
                     }
-                    .city{
+                    .city {
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 150%;
@@ -179,8 +191,8 @@ button{
                         padding-top: 12px;
                         padding-left: 12px;
                     }
-                    .street{
-                        color:#615F69;
+                    .street {
+                        color: #615f69;
                         padding-bottom: 12px;
                         padding-left: 12px;
                         font-weight: 400;
@@ -188,9 +200,9 @@ button{
                         line-height: 150%;
                         letter-spacing: 0.72px;
                     }
-    
-                    .flex{
-                        display:flex;
+
+                    .flex {
+                        display: flex;
                     }
                 }
             }
@@ -198,19 +210,18 @@ button{
                 margin-left: -100px;
             }
         }
-        .warning{
+        .warning {
             display: block;
             margin-left: 24px;
             width: 310px;
         }
     }
 
-    button{
+    button {
         width: 264px;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
         letter-spacing: 0.06em;
     }
-
 }
