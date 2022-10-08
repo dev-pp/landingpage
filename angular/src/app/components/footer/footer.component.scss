@@ -37,11 +37,13 @@
         .arrow1{
             height: 32px;
         }
+        .community{
+            font-size: 18px;
+            width: 680px;
+        }
     }
 
-    .community{
-        font-size: 18px;
-    }
+
 
     .arrow2{
         display: none;
@@ -80,7 +82,7 @@
                 width: 32px;
             }
             img{
-                margin-left: 152px;
+                margin-left: 262px;
             }
             p{
                 font-weight: 700;
@@ -94,6 +96,7 @@
             .community{
                 font-size: 16px;
                 margin-bottom: 60px;
+                margin-left: 132px;
                 line-height: 130%;
                 width: 312px;
                 display: flex;

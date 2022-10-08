@@ -11,7 +11,8 @@
         font-size: 40px;
         line-height: 130%;
         margin-left: 240px;
-        margin-bottom: 80px;
+        margin-top: 200px;
+        margin-bottom: 200px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
     }
@@ -53,7 +54,14 @@
                     background: linear-gradient(90deg, #7589FF 0%, #10E0DA 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                }
 
+                .data-mid{
+                    font-size: 120px;
+                    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                 }
 
                 .hour{
@@ -96,6 +104,7 @@
 
     letter-spacing: 0.72px;
     margin-bottom: 275px;
+    margin-top: 30px;
     color: #C5C5C5;
 }
 
@@ -113,7 +122,6 @@ button{
 @media screen and (max-width: 1728px) {
     .event-card{
         .content{
-
             margin-left: 120px;
         }
     }
@@ -145,6 +153,11 @@ button{
                     padding: 24px;
     
                     .data{
+                        font-weight: 600;
+                        font-size: 88px;
+                        line-height: 130%;
+                    }
+                    .data-mid{
                         font-weight: 600;
                         font-size: 88px;
                         line-height: 130%;

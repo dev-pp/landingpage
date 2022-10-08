@@ -1,5 +1,4 @@
 .reload-app{
-    
     .reload-app-content{
         padding-left: 240px;
     }
@@ -93,48 +92,50 @@
 
 @media screen and (max-width: 800px) {
     .reload-app{
-        padding-left: 24px;
-        h1{
-            background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 50.78%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            width: 400px;
-            font-size: 24px;
-        }
-        
-        .meetuos{
-            display: grid;
-            grid-template-columns: auto;
-            margin-bottom: 92px;
-                p{
-                    font-size: 15px;
-                    letter-spacing: 0.72px;
-                    width: 90%;
-                }
-
-                .resume{
-                    margin-bottom: 92px;
-                }
-            .btn1{
-                display: none;
+        .reload-app-content{
+            padding-left: 24px;
+            h1{
+                background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 50.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                width: 400px;
+                font-size: 24px;
             }
-        }
+            
+            .meetuos{
+                display: grid;
+                grid-template-columns: auto;
+                margin-bottom: 92px;
+                    p{
+                        font-size: 15px;
+                        letter-spacing: 0.72px;
+                        width: 90%;
+                    }
 
-        .divpodcast{
-            margin-left: 0;
-                p{
-                    font-size: 15px;
-                    letter-spacing: 0.72px;
-                    width: 90%;
-                    margin-bottom: 81px;
+                    .resume{
+                        margin-bottom: 92px;
+                    }
+                .btn1{
+                    display: none;
                 }
             }
-        .btn2{
-            display: block;
-            margin-bottom: 181px;
-        }
 
-        h3{
+            .divpodcast{
+                margin-left: 0;
+                    p{
+                        font-size: 15px;
+                        letter-spacing: 0.72px;
+                        width: 90%;
+                        margin-bottom: 81px;
+                    }
+                }
+            .btn2{
+                display: block;
+                margin-bottom: 181px;
+            }
+
+        }
+        .reload-img{
             display: none;
         }
     }
