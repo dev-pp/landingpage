@@ -17,6 +17,7 @@ export class MenuComponent {
   @Input() titleSignUp?: string;
   @Input() menus: MenuItem[] = [];
   @Input() socialNetworks: SocialNetwork[] = [];
-
+  show: any;
+  
   isActive = (route: string): boolean => location.href.includes(route);
 }

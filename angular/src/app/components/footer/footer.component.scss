@@ -15,25 +15,40 @@
         margin-bottom: 104px;
 
         p{
-            width: 383px;
+            width: 603px;
             font-size: 18px;
+            margin-top: -5px;
+        }
+
+        .devpp{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
         }
 
         img{
-            width: 32px;
-             margin-top: -15px;
-             margin-left: 12px;
+            margin-right: 22px;
+            height: 32px;
+            margin-top: -15px;
+            margin-left: 12px;
+            height: 56px;
+            margin-bottom: 10px;
+        }
+        .arrow1{
+            height: 32px;
+        }
+        .community{
+            font-size: 18px;
+            width: 680px;
         }
     }
 
-    .community{
-        font-size: 18px;
+
+
+    .arrow2{
+        display: none;
     }
 
-    img{
-        height: 56px;
-        margin-bottom: 10px;
-    }
     .copyright{
         color: #514E58;
         font-size: 18px;
@@ -41,15 +56,70 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .footer{
         padding-left: 24px;
         grid-template-columns: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         .flex{
             display: contents;
+            
             .cod-conduct{
                 display: none;
             }
+
+            .arrow2{
+                display: block;
+                margin-bottom: 48px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-left: 45%;
+                width: 32px;
+            }
+            img{
+                margin-left: 262px;
+            }
+            p{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 42px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .community{
+                font-size: 16px;
+                margin-bottom: 60px;
+                margin-left: 132px;
+                line-height: 130%;
+                width: 312px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .copyright{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: #514E58;
+                font-size: 14px;
+                margin-bottom: 32px;
+                text-align: center;
+            }
         }
+
+        .arrow1{
+            display: none;
+        }
+    
     }
 }

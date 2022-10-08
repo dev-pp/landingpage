@@ -1,6 +1,7 @@
 .event-card{
     color: white;
-
+    margin: 0;
+    padding: 0;
     h1{
         background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 23.78%);
         -webkit-background-clip: text;
@@ -10,16 +11,19 @@
         font-size: 40px;
         line-height: 130%;
         margin-left: 240px;
-        margin-bottom: 80px;
+        margin-top: 200px;
+        margin-bottom: 200px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
     }
 
-    .container{
+    .content{
         display: grid;
         grid-template-columns: auto auto auto;
         margin-left: 240px;
+        margin-top: -90px;
         .card{
+            background-color:  #010814;
             width: 440px;
             margin-bottom: 40px;
             h3{
@@ -31,6 +35,8 @@
                 font-size: 32px;
                 line-height: 130%;
 
+                margin-bottom: -0.5rem;
+
                 letter-spacing: 0.12em;
                 padding: 24px;
                 background: linear-gradient(91.06deg, #FFFFFF 2.26%, #00F0FF 100%);
@@ -39,7 +45,7 @@
                 background-clip: text;
             }
 
-            .container-card{
+            .content-card{
                 border: 1px solid #7589FF;
                 padding: 24px;
 
@@ -48,7 +54,14 @@
                     background: linear-gradient(90deg, #7589FF 0%, #10E0DA 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                }
 
+                .data-mid{
+                    font-size: 120px;
+                    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                 }
 
                 .hour{
@@ -91,6 +104,7 @@
 
     letter-spacing: 0.72px;
     margin-bottom: 275px;
+    margin-top: 30px;
     color: #C5C5C5;
 }
 
@@ -107,28 +121,81 @@ button{
 
 @media screen and (max-width: 1728px) {
     .event-card{
-        
-    
-
-        .container{
-
+        .content{
             margin-left: 120px;
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .event-card{
-        .container{
+        h1{
+            background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 70.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 24px;
+            width: 312px;
+            margin-bottom: 60px;
+            margin-left: 24px;
+        }
+        .content{
             display: grid;
             grid-template-columns: auto;
-
             .card{
-                margin-left: -70px;  
-                width: 80%;
+                h3{
+                    font-size: 32px;
+                }
+                margin-left: -100px;  
+                width: 342px;
+                .content-card{
+                    border: 1px solid #7589FF;
+                    padding: 24px;
+    
+                    .data{
+                        font-weight: 600;
+                        font-size: 88px;
+                        line-height: 130%;
+                    }
+                    .data-mid{
+                        font-weight: 600;
+                        font-size: 88px;
+                        line-height: 130%;
+                    }
+    
+                    .hour{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 130%;
+
+                        letter-spacing: 0.72px;
+                        padding: 12px;
+                    }
+                    .city{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        letter-spacing: 0.72px;
+                        padding-top: 12px;
+                        padding-left: 12px;
+                    }
+                    .street{
+                        color:#615F69;
+                        padding-bottom: 12px;
+                        padding-left: 12px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        letter-spacing: 0.72px;
+                    }
+    
+                    .flex{
+                        display:flex;
+                    }
+                }
             }
             .card:nth-child(n + 2) {
-                margin-left: -70px;
+                margin-left: -100px;
             }
         }
         .warning{
@@ -139,6 +206,7 @@ button{
     }
 
     button{
+        width: 264px;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;

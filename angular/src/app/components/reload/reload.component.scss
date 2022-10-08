@@ -1,12 +1,12 @@
 .reload-app{
-    padding-left: 10%;
-
+    .reload-app-content{
+        padding-left: 240px;
+    }
     h1{
         background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 17.78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         
         font-weight: 700;
         font-size: 40px;
@@ -79,6 +79,10 @@
 
     .divpodcast{
         margin-left: 50%;
+        
+    }
+    .btn2{
+        display: none;
     }
 
     .flex{
@@ -86,25 +90,52 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .reload-app{
-        h1{
-            background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 70.78%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            width: 400px;
-            font-size: 24px;
-        }
-        
-        .meetuos{
-            display: grid;
-            grid-template-columns: auto;
-        }
+        .reload-app-content{
+            padding-left: 24px;
+            h1{
+                background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 50.78%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                width: 400px;
+                font-size: 24px;
+            }
+            
+            .meetuos{
+                display: grid;
+                grid-template-columns: auto;
+                margin-bottom: 92px;
+                    p{
+                        font-size: 15px;
+                        letter-spacing: 0.72px;
+                        width: 90%;
+                    }
 
-        .divpodcast{
-            margin-left: 0;
+                    .resume{
+                        margin-bottom: 92px;
+                    }
+                .btn1{
+                    display: none;
+                }
+            }
+
+            .divpodcast{
+                margin-left: 0;
+                    p{
+                        font-size: 15px;
+                        letter-spacing: 0.72px;
+                        width: 90%;
+                        margin-bottom: 81px;
+                    }
+                }
+            .btn2{
+                display: block;
+                margin-bottom: 181px;
+            }
+
         }
-        h3{
+        .reload-img{
             display: none;
         }
     }

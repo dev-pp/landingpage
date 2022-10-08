@@ -1,12 +1,19 @@
 .pilot-navbar {
-    background-color: black;
-    height: 104px;
-
+    background-color:  #010814;
+    width: 100%;
+    button{
+        display: none;
+    }
+    .none{
+        display: none;
+    }
     .social-icons{
         img{
             width: 20px;
             margin: 14px;
-            margin-top: 29px;
+        }
+        .social-icon{
+            padding-left: 14px;
         }
     }
     .pilot-container {
@@ -33,6 +40,7 @@
                 float: left;
                 margin-top: 22px;
                 margin-bottom: 26px;
+                margin-left: 40px;
 
                 .pilot-nav-link {
                     display: block;
@@ -48,6 +56,69 @@
 
                 .pilot-nav-link:hover {
                     background-color: #111;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .pilot-navbar {
+        .none{
+            display: block;
+            width: 100%;
+            margin-top: -70%;
+        }
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+
+            .social-icon:first-child{
+                margin-left: 20px;
+            }
+            .social-icon{
+                background: #201E25;
+                width: 48px;
+                height: 48px;
+                margin-top: 50px;
+                margin-right: 30px;
+                padding: 0;
+                img{
+                    filter: opacity(0.7) drop-shadow(0 0 0 rgb(72, 93, 255)); 
+                }
+            }
+
+        }
+        .pilot-container {
+            width:  100%;
+            button{
+                margin-top: 18px;
+                display:grid;
+                margin-left: 80%;
+            }
+            .pilot-navbar-nav{
+                .pilot-nav-item {
+                    .pilot-nav-link {
+                        color: white;
+                        width: 200px;
+                        padding: 0;
+                        margin-left: -200px;
+                        text-align: left;
+                    }
+                    .cta{
+                        color: #FC4FF6
+                    }
+                }
+            }
+            .pilot-navbar-brand{
+                img{
+                    height: 40px;
+                    margin: 14px;
+                    margin-left: 24px;
+                }
+                .btn-nav{
+                    float: right;
                 }
             }
         }

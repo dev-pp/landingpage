@@ -1,34 +1,33 @@
-<nav class="pilot-navbar">
-    <div class="pilot-container">
-        <a class="pilot-navbar-brand" routerLink="/">
-            <img *ngIf="logoSrc" title="{{logoTitle}}" [src]="logoSrc" height="{{logoHeight}}" alt="{{logoAlt}}" />
-            <span *ngIf="!logoSrc">{{logoTitle}}</span>
-        </a>
-        <div class="collapse navbar-collapse" [ngClass]="{'show': isCollapse}" id="navbarSupportedContent">
-            <ul class="pilot-navbar-nav">
-                <li *ngFor="let menuItem of menus" class="pilot-nav-item" data-anchor="data-anchor">
-                    <a class="pilot-nav-link" [ngClass]="{ 'active': isActive(menuItem.path), 'cta': menuItem.isCTA }" aria-current="page"
-                        fragment="about" [routerLink]="[menuItem.link]">
-                        {{menuItem.label}}
-                    </a>
-                </li>
-            </ul>
-            <ul *ngIf="socialNetworks" class="social-networks">
-                <li *ngFor="let socialNetwork of socialNetworks" class="icon-social-network">
-                    <i [ngClass]="socialNetwork.icon"></i>
-                </li>
-            </ul>
-        </div>
-        <button *ngIf="isCollapse" class="pilot-navbar-toggler" (click)="isCollapse = !isCollapse" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="pilot-navbar-toggler-icon"></span>
-        </button>
-        <div class="social-icons">
-            <img src="../../../../assets/images/Logo_one_color/white/youtube.svg" alt="">
-            <img src="../../../../assets/images/Logo_one_color/white/fb.svg" alt="">
-            <img src="../../../../assets/images/Logo_one_color/white/github.svg" alt="">
-            <img src="../../../../assets/images/Logo_one_color/white/discord.svg" alt="">
-        </div>
+<nav class="navbar navbar-expand-lg pilot-navbar">
+  <div class="pilot-container">
+    <a class="pilot-navbar-brand" routerLink="/">
+      <img *ngIf="logoSrc" title="{{logoTitle}}" [src]="logoSrc" height="{{logoHeight}}" alt="{{logoAlt}}" />
+      <span *ngIf="!logoSrc">{{logoTitle}}</span>
+    </a>
+    <button class="navbar-toggler" (click)="show = !show" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{'show': show}" id="navbarNav">
+      <ul class="navbar-nav pilot-navbar-nav">
+        <li *ngFor="let menuItem of menus" class="pilot-nav-item" data-anchor="data-anchor">
+          <a class="pilot-nav-link" [ngClass]="{ 'active': isActive(menuItem.path), 'cta': menuItem.isCTA }" aria-current="page"
+              fragment="about" [routerLink]="[menuItem.link]">
+              {{menuItem.label}}
+          </a>
+        </li>
+      </ul>
+      <ul *ngIf="socialNetworks" class="social-networks">
+        <li *ngFor="let socialNetwork of socialNetworks" class="icon-social-network">
+            <i [ngClass]="socialNetwork.icon"></i>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a target="_blank" class="social-icon" href="https://www.youtube.com/channel/UC9QAZYQ0fHLERa6PLN4GWyw"><img src="../../../../assets/images/Logo_one_color/white/youtube.svg" alt=""></a>
+        <a target="_blank" class="social-icon" href="https://www.facebook.com/groups/770159453169235/"><img src="../../../../assets/images/Logo_one_color/white/fb.svg" alt=""></a>
+        <a target="_blank" class="social-icon" href="https://github.com/dev-pp/meetup"><img src="../../../../assets/images/Logo_one_color/white/github.svg" alt=""></a>
+        <a target="_blank" class="social-icon" href="https://discord.gg/Yp5dns5gK5"><img src="../../../../assets/images/Logo_one_color/white/discord.svg" alt=""></a>
+      </div>
+      <img class="none" src="../../../../assets/images/background-image/LooperBG.png" alt="">
     </div>
+  </div>
 </nav>

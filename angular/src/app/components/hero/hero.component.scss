@@ -1,8 +1,8 @@
 #home {
-    background-image: url("/assets/images/devpp-bg-hero.png");
+    background-image: url("../../../assets/images/background-image/BG.png");
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 1080px;
     .content {
         text-align: center;
         width: 100%;
@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #home { 
         .content {
             h1 {
