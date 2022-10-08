@@ -74,7 +74,9 @@
             display: flex;
             flex-direction: row;
 
-        
+            .social-icon:first-child{
+                margin-left: 20px;
+            }
             .social-icon{
                 background: #201E25;
                 width: 48px;
@@ -83,9 +85,10 @@
                 margin-right: 30px;
                 padding: 0;
                 img{
-                    filter: opacity(0.5) drop-shadow(0 0 0 rgb(47, 64, 249)); 
+                    filter: opacity(0.7) drop-shadow(0 0 0 rgb(72, 93, 255)); 
                 }
             }
+
         }
         .pilot-container {
             width:  100%;
