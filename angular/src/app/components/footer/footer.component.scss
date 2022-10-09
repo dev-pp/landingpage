@@ -1,4 +1,6 @@
 .footer{
+    width: 120rem;
+    height: 18.188rem;
     color: white;
     display: grid;
     grid-template-columns: auto auto;
@@ -12,8 +14,11 @@
 
     .flex{
         display: flex;
-        margin-bottom: 104px;
 
+        .mg{
+            margin-bottom: 3.75rem;
+        }
+        
         p{
             width: 603px;
             font-size: 1.125rem;
