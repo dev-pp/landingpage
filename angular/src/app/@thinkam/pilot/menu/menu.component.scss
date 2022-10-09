@@ -85,9 +85,10 @@
 
 @media screen and (max-width: 800px) {
     .pilot-navbar {
+        background-color: black;
         .none {
             display: block;
-            width: 100%;
+            width: 120%;
             margin-top: -70%;
         }
         .social-icons {
