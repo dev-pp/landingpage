@@ -106,6 +106,25 @@ button{
     border: none;
 }
 
+@media screen and (max-width: 1600px) {
+    .form-section{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    p{
+        width: 90%;
+    }
+    input{
+        width: 90%;
+    }
+    select{
+        width: 90%;
+    }
+    button{
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .form-section{
         padding-left: 3vw;
