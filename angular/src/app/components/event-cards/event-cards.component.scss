@@ -2,6 +2,7 @@
     color: white;
     margin: 0;
     padding: 0;
+    margin-left: 8vw;
 
     h1 {
         background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 23.78%);
@@ -11,7 +12,6 @@
         font-weight: 700;
         font-size: 2.5rem;
         line-height: 130%;
-        margin-left: 240px;
         margin-top: 200px;
         margin-bottom: 200px;
         letter-spacing: 0.16em;
@@ -21,10 +21,10 @@
     .content {
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-left: 8vw;
         margin-top: -90px;
 
         .card {
+            margin-left: -8vw;
             background-color: #010814;
             width: 24vw;
             margin-bottom: 40px;
@@ -52,6 +52,10 @@
                 border: 1px solid #7589ff;
                 padding: 0 1rem 1rem;
 
+                .ping{
+                    height: 24px;
+                }
+
                 .data {
                     font-size: 4rem;
                     background: linear-gradient(90deg, #7589ff 0%, #10e0da 100%);
@@ -74,7 +78,7 @@
                 }
 
                 .address {
-                    min-height: 12vh;   
+                    height: 70px;   
                 }
 
                 .city {
@@ -90,6 +94,7 @@
                     padding-left: 12px;
                     min-height: 14vh;
                     margin-bottom: 0px !important;
+                    height: 12px;
                 }
                 .flex {
                     display: flex;
@@ -106,7 +111,6 @@
 }
 
 .warning {
-    margin-left: 240px;
     display: flex;
     padding: 30px 0 30px 0;
     width: 1000px;
