@@ -1,5 +1,5 @@
 .form-section{
-    padding-left: 252px;
+    padding-left: 12vw;
     padding-bottom: 5%;
     color: white;
 
@@ -106,9 +106,9 @@ button{
     border: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .form-section{
-        padding-left: 24px;
+        padding-left: 3vw;
         padding-bottom: 5%;
         grid-template-columns: auto;
         .title-icons{
