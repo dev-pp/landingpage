@@ -92,7 +92,38 @@
         width: 100%;
     }
 }
-
+@media screen and (max-width: 1178px) {
+    .reload-app{
+        .reload-app-content{
+            padding-left: 6vw;
+            .meetuos{
+                display: grid;
+                grid-template-columns: auto;
+                p{
+                    font-size: 0.938rem;
+                    letter-spacing: 0.72px;
+                    width: 90%;
+                }
+                .btn1{
+                    display: none;
+                }
+            }
+            .divpodcast{
+                margin-left: 0;
+                    p{
+                        font-size: 0.938rem;
+                        letter-spacing: 0.72px;
+                        width: 90%;
+                        margin-bottom: 81px;
+                    }
+            }
+            .btn2{
+                display: block;
+                margin-bottom: 181px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 800px) {
     .reload-app{
         .reload-app-content{
@@ -118,9 +149,6 @@
                     .resume{
                         margin-bottom: 92px;
                     }
-                .btn1{
-                    display: none;
-                }
             }
 
             .divpodcast{
@@ -136,7 +164,6 @@
                 display: block;
                 margin-bottom: 181px;
             }
-
         }
         .reload-img{
             display: none;
