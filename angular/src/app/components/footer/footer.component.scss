@@ -1,33 +1,26 @@
 .footer{
     width: 120rem;
-    height: 18.188rem;
     color: white;
     display: grid;
     grid-template-columns: auto auto;
-
     border-top: 1px solid transparent;
     border-image: linear-gradient(to right, #77A5FA, #FF1CF7);
     border-image-slice: 1;
-
     padding-left: 12vw;
     padding-top: 68px;
-
     .flex{
         display: flex;
         margin-bottom: 3.75rem;
-        
         p{
             width: 603px;
             font-size: 1.125rem;
             margin-top: -5px;
         }
-
         .devpp{
             font-weight: 700;
             font-size: 2rem;
             line-height: 42px;
         }
-
         img{
             margin-right: 22px;
             height: 32px;
@@ -44,13 +37,9 @@
             width: 680px;
         }
     }
-
-
-
     .arrow2{
         display: none;
     }
-
     .copyright{
         color: #514E58;
         font-size: 1.125rem;
@@ -58,33 +47,33 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 700px) {
     .footer{
+        margin: auto;
+        width: 700px;
         padding-left: 3vw;
-        grid-template-columns: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+
         .flex{
             display: contents;
-            
+
             .cod-conduct{
                 display: none;
             }
 
             .arrow2{
-                display: block;
-                margin-bottom: 48px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin-left: 45%;
+                margin-right: 10px;
                 width: 32px;
+                display: flex;
+                align-items: center;
             }
             img{
-                margin-left: 262px;
+                margin-left: 40%;
+                justify-content: center;
+                align-items: center;
             }
             p{
                 font-weight: 700;
@@ -109,13 +98,10 @@
             }
             .copyright{
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
                 align-items: center;
                 color: #514E58;
                 font-size: 0.875rem;
                 margin-bottom: 32px;
-                text-align: center;
             }
         }
 
