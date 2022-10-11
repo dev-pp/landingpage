@@ -4,7 +4,7 @@
       <img *ngIf="logoSrc" title="{{logoTitle}}" [src]="logoSrc" height="{{logoHeight}}" alt="{{logoAlt}}" />
       <span *ngIf="!logoSrc">{{logoTitle}}</span>
     </a>
-    <button class="navbar-toggler" (click)="show = !show" (click)="closed()" *ngIf="!open" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
+    <button class="navbar-toggler" (click)="show = !show" (click)="closed()" *ngIf="!open" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{'show': show}" id="navbarNav">
       <ul class="navbar-nav pilot-navbar-nav">
