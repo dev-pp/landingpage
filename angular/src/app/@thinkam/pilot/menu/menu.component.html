@@ -1,10 +1,14 @@
 <nav class="navbar navbar-expand-lg pilot-navbar">
   <div class="pilot-container">
-    <a class="pilot-navbar-brand" routerLink="/">
+    <a class="pilot-navbar-brand" routerLink="/" *ngIf="!open">
       <img *ngIf="logoSrc" title="{{logoTitle}}" [src]="logoSrc" height="{{logoHeight}}" alt="{{logoAlt}}" />
       <span *ngIf="!logoSrc">{{logoTitle}}</span>
     </a>
-    <button class="navbar-toggler" (click)="show = !show" (click)="closed()" *ngIf="!open" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
+    <button class="navbar-toggler" (click)="show = !show" (click)="closed()" *ngIf="!open" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="../../../../assets/images/Logo_one_color/blue/menu.png" alt="">
+    </button>
+    <button class="navbar-toggler" id="closed" (click)="show = !show" (click)="opned()" *ngIf="open" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="../../../../assets/images/icon-close.png" alt="">
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{'show': show}" id="navbarNav">
       <ul class="navbar-nav pilot-navbar-nav">
@@ -15,16 +19,25 @@
           </a>
         </li>
       </ul>
+      <p *ngIf="open">Conecte-se também pelo grupo no Telegram, Discord ou Slack</p>
       <ul *ngIf="socialNetworks" class="social-networks">
         <li *ngFor="let socialNetwork of socialNetworks" class="icon-social-network">
             <i [ngClass]="socialNetwork.icon"></i>
         </li>
       </ul>
-      <div class="social-icons">
+      <div class="social-icons" *ngIf="!open">
         <a target="_blank" class="social-icon" href="https://www.youtube.com/channel/UC9QAZYQ0fHLERa6PLN4GWyw"><img src="../../../../assets/images/Logo_one_color/white/youtube.svg" alt=""></a>
         <a target="_blank" class="social-icon" href="https://www.facebook.com/groups/770159453169235/"><img src="../../../../assets/images/Logo_one_color/white/fb.svg" alt=""></a>
         <a target="_blank" class="social-icon" href="https://github.com/dev-pp/meetup"><img src="../../../../assets/images/Logo_one_color/white/github.svg" alt=""></a>
         <a target="_blank" class="social-icon" href="https://discord.gg/Yp5dns5gK5"><img src="../../../../assets/images/Logo_one_color/white/discord.svg" alt=""></a>
+      </div>
+      <div class="social-icons2" *ngIf="open">
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/telegram.png" alt=""></a>
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/slack.png" alt=""></a>
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/discord.png" alt=""></a>
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/Logos/header/telegram.png" alt=""></a>
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/Logos/header/slack.png" alt=""></a>
+        <a target="_blank" class="social-icon" href=""><img src="../../../../assets/images/Logos/header/discord.png" alt=""></a>
       </div>
       <img class="none" src="../../../../assets/images/background-image/bgheader.png" alt="">
     </div>

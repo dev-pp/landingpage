@@ -17,41 +17,30 @@
     .pilot-container {
         width: 100%;
         position: relative;
-
         #navbarNav {
             position: relative;
             float: right;
             margin-right: 6vw;
         }
-
         .pilot-navbar-brand {
             display: block;
             float: left;
-
             img {
                 margin-left: 6vw;
                 margin-top: 22px;
                 margin-bottom: 26px;
             }
         }
-
         .pilot-navbar-nav {
             list-style-type: none;
             margin: 0;
             padding: 0;
 
-            .pilot-nav-item:first-child {
-                margin-left: 6vw;
-            }
-            .pilot-nav-item:last-child {
-                width: 124px;
-            }
             .pilot-nav-item {
                 float: left;
                 margin-top: 22px;
                 margin-bottom: 26px;
                 margin-left: 3vw;
-
                 .pilot-nav-link {
                     margin-top: 10px;
                     display: block;
@@ -60,11 +49,9 @@
                     padding: 0.4rem;
                     text-decoration: none;
                 }
-
                 .cta {
                     color: #fc4ff6;
                 }
-
                 .pilot-nav-link:hover {
                     background-color: #111;
                 }
@@ -72,11 +59,9 @@
         }
     }
 }
-
 .navbar-expand{
     width: 991px;
 }
-
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .pilot-navbar {
         .pilot-container {
@@ -94,65 +79,69 @@
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
     .pilot-navbar {
-        .pilot-navbar-brand {
-            img {
-                width: 140px;
+        .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    height: 40px;
+                    margin-top: 30px;
+                }
             }
-        }
-        .pilot-navbar-nav {
-            .pilot-nav-item {
-                margin-left: 0.6vw;
+            .pilot-navbar-nav {
+                .pilot-nav-item {
+                    margin-left: 0.6vw;
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .pilot-navbar {
+        p{
+            font-size: 16px;
+            color: #FFFFFF;
+            margin: 12px;
+            margin-bottom: 40px;
+        }
         background-color: #000000;
         .none {
             display: block;
             width: 120%;
             margin-top: -70%;
         }
-        .social-icons {
-            display: flex;
-            flex-direction: row;
+        .social-icons2{
+            width: 48px;
+            display: inline;
+            padding-left: 10px;
 
-            .social-icon:first-child {
-                margin-left: 20px;
-            }
-            .social-icon {
-                background: #201e25;
-                width: 48px;
-                height: 48px;
-                margin-top: 50px;
-                margin-right: 30px;
-                padding: 0;
-                img {
-                    filter: opacity(0.7) drop-shadow(0 0 0 rgb(72, 93, 255));
+                img{
+                    margin-right: 32px;
                 }
-            }
         }
         .pilot-container {
+            #navbarNav {
+                position: relative;
+                float: left;
+                margin-left: 30px;
+            }
             width: 100%;
             button {
                 width: 18px;
-                margin-top: -2.5rem;
-                display: grid;
-                margin-left: 75%;
-                margin-right: 40px;
+                margin-top: 14px;
             }
             .pilot-navbar-nav {
+                margin-top: 15px;
                 .pilot-nav-item {
+                    padding-bottom: -20px;
                     .pilot-nav-link {
                         color: white;
                         width: 200px;
                         padding: 0;
-                        margin-left: -200px;
                         text-align: left;
+                        margin-top: -10px;
+                        font-size: 18px;
                     }
                     .cta {
                         color: #fc4ff6;
