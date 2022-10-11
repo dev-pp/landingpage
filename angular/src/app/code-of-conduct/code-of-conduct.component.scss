@@ -1,8 +1,12 @@
 body{
     background-color:  #010814;
 }
+
 .content{
     background-color:  #010814;
+}
+
+.content2{
     padding-left: 20%;
     padding-right: 20%;
 
@@ -21,5 +25,9 @@ body{
     }
     a{
         color: #10E0DA;
+    }
+    img{
+        width: 100%;
+        max-width: 1920px;
     }
 }
