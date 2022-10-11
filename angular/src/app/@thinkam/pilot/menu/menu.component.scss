@@ -2,7 +2,8 @@
     background-color: #010814;
     width: 100%;
     button {
-        display: none;
+        float:right;
+        margin: 30px 20px;
     }
     .none {
         display: none;
@@ -52,6 +53,7 @@
                 margin-left: 3vw;
 
                 .pilot-nav-link {
+                    margin-top: 10px;
                     display: block;
                     color: white;
                     text-align: center;
@@ -71,21 +73,45 @@
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+.navbar-expand{
+    width: 991px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
     .pilot-navbar {
         .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    width: 140px;
+                }
+            }
             .pilot-navbar-nav {
                 .pilot-nav-item {
-                    margin-left: 0.1vw;
+                    margin-left: 0.6vw;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
     .pilot-navbar {
-        background-color: black;
+        .pilot-navbar-brand {
+            img {
+                width: 140px;
+            }
+        }
+        .pilot-navbar-nav {
+            .pilot-nav-item {
+                margin-left: 0.6vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pilot-navbar {
+        background-color: #000000;
         .none {
             display: block;
             width: 120%;
@@ -113,9 +139,11 @@
         .pilot-container {
             width: 100%;
             button {
-                margin-top: 18px;
+                width: 18px;
+                margin-top: -2.5rem;
                 display: grid;
-                margin-left: 80%;
+                margin-left: 75%;
+                margin-right: 40px;
             }
             .pilot-navbar-nav {
                 .pilot-nav-item {
