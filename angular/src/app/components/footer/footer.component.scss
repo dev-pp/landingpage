@@ -12,7 +12,7 @@
         display: flex;
         margin-bottom: 3.75rem;
         p{
-            width: 603px;
+            width: 30vw;
             font-size: 1.125rem;
             margin-top: -5px;
         }
@@ -20,6 +20,14 @@
             font-weight: 700;
             font-size: 2rem;
             line-height: 42px;
+        }
+        .cod-conduct{
+            width: 30vw;
+            margin-left: 6.5vw;
+            a{
+                color: white;  
+                text-decoration: none;
+            }
         }
         img{
             margin-right: 22px;
@@ -34,7 +42,8 @@
         }
         .community{
             font-size: 1.125rem;
-            width: 680px;
+            width: 40vw;
+            margin-right: 3vw;
         }
     }
     .arrow2{
