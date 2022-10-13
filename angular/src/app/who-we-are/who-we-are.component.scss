@@ -20,8 +20,8 @@ body{
         font-weight: 700;
         font-size: 40px;
         line-height: 130%;
-
-        /* or 52px */
+        margin-top: 140px;
+        margin-bottom: 80px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
@@ -37,5 +37,12 @@ body{
     img{
         width: 100%;
         max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content2{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
