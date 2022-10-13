@@ -18,6 +18,7 @@ import { EventCardsComponent } from './components/event-cards/event-cards.compon
 import { DigitalMediaComponent } from './components/digital-media/digital-media.component';
 import { BePartOfItComponent } from './components/be-part-of-it/be-part-of-it.component';
 import { BePartOfItTwoComponent } from './components/be-part-of-it-two/be-part-of-it-two.component';
+import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BePartOfItTwoComponent } from './components/be-part-of-it-two/be-part-o
     EventCardsComponent,
     DigitalMediaComponent,
     BePartOfItComponent,
-    BePartOfItTwoComponent
+    BePartOfItTwoComponent,
+    WhoWeAreComponent
   ],
   imports: [
     BrowserModule,
