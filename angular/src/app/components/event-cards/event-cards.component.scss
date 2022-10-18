@@ -2,6 +2,7 @@
     color: white;
     margin: 0;
     padding: 0;
+    margin-left: 8vw;
 
     h1 {
         background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 23.78%);
@@ -9,9 +10,8 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 2.5rem;
         line-height: 130%;
-        margin-left: 240px;
         margin-top: 200px;
         margin-bottom: 200px;
         letter-spacing: 0.16em;
@@ -21,7 +21,6 @@
     .content {
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-left: 8vw;
         margin-top: -90px;
 
         .card {
@@ -35,7 +34,7 @@
                 border-right: 1px solid #7589ff;
 
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 2rem;
                 line-height: 130%;
 
                 margin-bottom: -0.5rem;
@@ -51,6 +50,10 @@
             .content-card {
                 border: 1px solid #7589ff;
                 padding: 0 1rem 1rem;
+
+                .ping{
+                    height: 24px;
+                }
 
                 .data {
                     font-size: 4rem;
@@ -71,25 +74,31 @@
 
                 .hour {
                     font-size: 1.3rem;
+                    margin-top: -30px;
+                    margin-left: 3px;
                 }
 
                 .address {
-                    min-height: 12vh;   
+                    height: 70px;   
                 }
 
                 .city {
-                    font-size: 16px;
+                    font-size: 1rem;
                     padding-left: 12px;
                     margin-bottom: 0px !important;                 
                 }
                 .street {
+                    p{
+                        font-size: 10px;
+                    }
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 1rem;
                     color: #615f69;
                     padding-bottom: 12px;
                     padding-left: 12px;
                     min-height: 14vh;
                     margin-bottom: 0px !important;
+                    height: 12px;
                 }
                 .flex {
                     display: flex;
@@ -105,13 +114,12 @@
     }
 }
 
-.warning {
-    margin-left: 240px;
+.warning2 {
     display: flex;
     padding: 30px 0 30px 0;
-    width: 1000px;
+    width: 100%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 130%;
 
     letter-spacing: 0.72px;
@@ -119,44 +127,92 @@
     margin-top: 30px;
     color: #c5c5c5;
 }
+.warning {
+    display: none;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 130%;
+    letter-spacing: 0.72px;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    color: #c5c5c5;
+
+    p{
+    width: 272px;
+    height: 63px;
+    left: 40px;
+    top: 141px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.72px;
+    }
+}
 
 button {
     background: #485dff;
     color: white;
     font-size: 1rem;
     border-radius: 2px;
-    width: 20vw;
+    width: 100%;
     padding: 16px 24px;
     gap: 145px;
     border: none;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 1728px) {
     .event-card {
         .content {
-            margin-left: 120px;
+            // margin-left: 8vw;
         }
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1030px) {
     .event-card {
+        .content {
+            .card {
+                width: 29vw;
+            }
+            .card:nth-child(n + 2) {
+                margin-left: 5px;
+            }
+        }
+        button{
+
+            img{
+                width: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .event-card {
+        margin-left: 5vw;
         h1 {
             background: linear-gradient(91.06deg, #ffffff 2.26%, #7589ff 70.78%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-size: 24px;
+            font-size: 1.5rem;
             width: 312px;
-            margin-bottom: 60px;
-            margin-left: 24px;
+            margin-bottom: 30vh;
+            margin-left: 22px;
         }
         .content {
             display: grid;
             grid-template-columns: auto;
+            margin-top: 8vw;
+            margin-left: 27vw;
             .card {
                 h3 {
-                    font-size: 32px;
+                    font-size: 2rem;
                 }
                 margin-left: -100px;
                 width: 342px;
@@ -164,28 +220,33 @@ button {
                     border: 1px solid #7589ff;
                     padding: 24px;
 
+                    .ping{
+                        margin-top: 20px;
+                    }
                     .data {
                         font-weight: 600;
-                        font-size: 88px;
+                        font-size: 5.5rem;
                         line-height: 130%;
                     }
                     .data-mid {
                         font-weight: 600;
-                        font-size: 88px;
+                        font-size: 5.5rem;
                         line-height: 130%;
                     }
 
                     .hour {
                         font-weight: 500;
-                        font-size: 22px;
+                        font-size: 1.375rem;
                         line-height: 130%;
-
                         letter-spacing: 0.72px;
                         padding: 12px;
+                        font-size: 1.3rem;
+                        margin-top: -30px;
+                        margin-left: -8px;
                     }
                     .city {
                         font-weight: 400;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         line-height: 150%;
                         letter-spacing: 0.72px;
                         padding-top: 12px;
@@ -195,8 +256,8 @@ button {
                         color: #615f69;
                         padding-bottom: 12px;
                         padding-left: 12px;
-                        font-weight: 400;
-                        font-size: 18px;
+                        font-weight: 700;
+                        font-size: 14px;
                         line-height: 150%;
                         letter-spacing: 0.72px;
                     }
@@ -210,18 +271,27 @@ button {
                 margin-left: -100px;
             }
         }
-        .warning {
-            display: block;
-            margin-left: 24px;
-            width: 310px;
+        .warning2{
+            display: none;
+        }
+        .warning{
+            display: flex;
+            margin-bottom: -1.5vh;
+            margin-top: -30.5vh;
+            img{
+                height: 24px;
+                margin: 1rem;
+                margin-top: 0;
+            }
         }
     }
 
     button {
         width: 264px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 21px;
         letter-spacing: 0.06em;
+        margin-top: 30px;
     }
 }
