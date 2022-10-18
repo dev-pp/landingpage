@@ -130,9 +130,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .reload-app{
+        margin-top: -40vh;
+    }
+}
+
+// @media screen and (max-width: 800px) {
+//     .reload-app{
+//         margin-top: -40vw;
+//     }
+// }
 @media screen and (max-width: 800px) {
     .reload-app{
-        margin-top: -800px;
+        margin-top: -20vw;
         .reload-app-content{
             .reload-descktop{
                 display: none;
@@ -153,7 +165,6 @@
             
             .meetuos{
                 margin-left: -22px;
-                // background-color: rgb(212, 14, 14);
                 display: grid;
                 grid-template-columns: auto;
                 margin-bottom: 92px;
@@ -201,5 +212,17 @@
         .reload-img{
             display: none;
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reload-app{
+        margin-top: -90vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reload-app{
+        margin-top: -120vw;
     }
 }
