@@ -1,0 +1,48 @@
+body{
+    background-color:  #010814;
+}
+
+.content{
+    background-color:  #010814;
+}
+
+.content2{
+    padding-left: 20%;
+    padding-right: 20%;
+
+    h1{
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        margin-top: 140px;
+        margin-bottom: 80px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+    h2{
+        color: #7589FF;
+    }
+    p{
+        color: white;
+    }
+    a{
+        color: #10E0DA;
+    }
+    img{
+        width: 100%;
+        max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content2{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

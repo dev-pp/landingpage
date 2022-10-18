@@ -1,11 +1,17 @@
 .partners{
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .partners-container{
-        padding-left: 240px;
+        padding-left: 6.25rem;
         h1{
+            margin-left: -12px;
             letter-spacing: 0.16em;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 40px;
+            font-size: 2.5rem;
+            margin-top: 12vh;
             margin-bottom: 66px;       
             background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 20.78%);
             -webkit-background-clip: text;
@@ -16,32 +22,37 @@
             display: grid;
             grid-template-columns: auto auto auto auto;
             margin-left: -20px;
-            .card{
-                background-color: #201E25;
-                height: 152px;
-                width: 324px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                border-radius:  0px 30px ;
-                margin: 20px 20px 20px 20px;
-                color: white;
-                p{
-                    text-transform: uppercase;
-                    background: linear-gradient(91.06deg, #FFFFFF 2.26%, #7589FF 80.78%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 130%;
-                    letter-spacing: 0.16em;
-                }
-                // img{
 
-                // }
+            .card{
+                width: 20.563rem;
+                height: 9.5rem;
+                background-image: url(../../../assets/images/background-image/Group.png);
+                background-color: transparent;
+                background-repeat: no-repeat;
+                align-items: center;
+                margin-bottom: 2.375rem;
+                img{
+                    width: 9.5rem;
+                    margin: auto;
+                }
+            }
+            .foregon{
+                img{
+                    width: 9.5rem;
+                    // margin: ;
+                }
+            }
+            .fip{
+                img{
+                    width: 12.75rem;
+                    // margin: ;
+                }
+            }
+            .new-partner{
+                img{
+                    width: 12.5rem;
+                    filter: opacity(0.4) drop-shadow(0 0 0 rgb(18,17,17));
+                }
             }
         }
     }
@@ -50,24 +61,35 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-        }
-        button{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 24px;
-            gap: 30px;
-            background-color: transparent;
-            border: 1px solid #FFFFFF;
-            border-radius: 2px;
-            color: #FFFFFF;
-            margin-bottom: 204px;
-            margin-top: 64px;
+            button{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 16px 24px;
+                gap: 30px;
+                background-color: transparent;
+                border: 1px solid #FFFFFF;
+                border-radius: 2px;
+                color: #FFFFFF;
+                margin-bottom: 204px;
+                margin-top: 64px;
+            }
         }
     }
 
 @media screen and (max-width: 1600px) {
+    .partners{
+        .partners-container{
+            .grid{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1174px) {
     .partners{
         .partners-container{
             .grid{
@@ -80,9 +102,20 @@
 
 @media screen and (max-width: 800px) {
     .partners{
+        margin-bottom: -210px;
+        .center{
+            button{
+                margin-top: 1px;
+                border: 1px solid #485DFF;
+                border-radius: 2px;
+                width: 312px;
+                height: 53px;
+            }
+        }
         .partners-container{
-            padding-left: 24px;
+            padding-left: 13.250vw;
             padding-right: 24px;
+
             h1{
                 background: linear-gradient(91.06deg, #ffffff 2.26%, #7589FF 80.78%);
                 -webkit-background-clip: text;
@@ -90,7 +123,7 @@
                 background-clip: text; 
 
                 font-weight: 700;
-                font-size: 24px;
+                font-size: 1.5rem;
                 letter-spacing: 0.16em;
                 margin-bottom: 60px;
             }
@@ -98,9 +131,8 @@
             .grid{
                     display: grid;
                     grid-template-columns: auto;
-                    .card{
-                        width: 90%;
-                    }
+                    text-align: center;
+                    // margin-left: 2.813rem;
                 }
             }
         }   

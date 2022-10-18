@@ -1,5 +1,5 @@
 .form-section{
-    padding-left: 252px;
+    padding-left: 12vw;
     padding-bottom: 5%;
     color: white;
 
@@ -14,7 +14,7 @@
             background-clip: text;
 
             font-weight: 700;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 130%;
             margin-bottom: 82px;
             letter-spacing: 0.02em;
@@ -23,7 +23,7 @@
         .conect{
             width: 400px;
             font-weight: 400;
-            font-size: 20px;
+            font-size: 1.25rem;
             line-height: 130%;
             letter-spacing: 0.72px;
         }
@@ -46,7 +46,7 @@
         margin-left: 200px;
         p{
             font-weight: 400;
-            font-size: 24px;
+            font-size: 1.5rem;
             line-height: 33px;
             letter-spacing: 0.72px;
             margin-bottom: 74px;
@@ -106,30 +106,60 @@ button{
     border: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1600px) {
     .form-section{
-        padding-left: 24px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    p{
+        width: 90%;
+    }
+    input{
+        width: 90%;
+    }
+    select{
+        width: 90%;
+    }
+    button{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form-section{
+        background-color: #0D0C0F;
+        padding-left: 3vw;
         padding-bottom: 5%;
         grid-template-columns: auto;
         .title-icons{
+            .none{
+                display: none;
+            }
             .title{
                 font-weight: 700;
-                font-size: 24px;
+                font-size: 1.5rem;
                 line-height: 130%;
-
+                margin-top: 5vh;
                 letter-spacing: 0.02em;
                 margin-bottom: 24px;
             }
             .conect{
-                font-size: 20px;
                 margin-bottom: 60px;
+                left: 25px;
+                top: 108px;
+                font-family: 'Chakra Petch';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: 0.72px;
             }
         }
         .form{
             margin-left: 0px;
             p{
                 margin-top: 58px;
-                font-size: 20px;
+                font-size: 1.25rem;
                 margin-bottom: 56px;
             }
         }

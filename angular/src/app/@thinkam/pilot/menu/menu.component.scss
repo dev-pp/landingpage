@@ -2,7 +2,8 @@
     background-color: #010814;
     width: 100%;
     button {
-        display: none;
+        float:right;
+        margin: 30px 20px;
     }
     .none {
         display: none;
@@ -39,12 +40,6 @@
             margin: 0;
             padding: 0;
 
-            .pilot-nav-item:first-child {
-                margin-left: 6vw;
-            }
-            .pilot-nav-item:last-child {
-                width: 124px;
-            }
             .pilot-nav-item {
                 float: left;
                 margin-top: 22px;
@@ -52,6 +47,7 @@
                 margin-left: 3vw;
 
                 .pilot-nav-link {
+                    margin-top: 10px;
                     display: block;
                     color: white;
                     text-align: center;
@@ -64,66 +60,97 @@
                 }
 
                 .pilot-nav-link:hover {
-                    background-color: #111;
+                    color: #09BFBA;
                 }
             }
         }
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+.navbar-expand{
+    width: 991px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
     .pilot-navbar {
         .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    width: 140px;
+                }
+            }
             .pilot-navbar-nav {
                 .pilot-nav-item {
-                    margin-left: 0.1vw;
+                    margin-left: 0.6vw;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
     .pilot-navbar {
+        .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    height: 40px;
+                    margin-top: 30px;
+                }
+            }
+            .pilot-navbar-nav {
+                .pilot-nav-item {
+                    margin-left: 0.6vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pilot-navbar {
+        background-color: #000000;
+        p{
+            font-size: 16px;
+            color: #FFFFFF;
+            margin: 12px;
+            margin-bottom: 40px;
+        }
         .none {
             display: block;
-            width: 100%;
+            width: 120%;
             margin-top: -70%;
         }
-        .social-icons {
-            display: flex;
-            flex-direction: row;
-
-            .social-icon:first-child {
-                margin-left: 20px;
-            }
-            .social-icon {
-                background: #201e25;
-                width: 48px;
-                height: 48px;
-                margin-top: 50px;
-                margin-right: 30px;
-                padding: 0;
-                img {
-                    filter: opacity(0.7) drop-shadow(0 0 0 rgb(72, 93, 255));
+        .social-icons2{
+            width: 48px;
+            display: inline;
+            padding-left: 10px;
+            
+                img{
+                    margin-right: 32px;
                 }
-            }
         }
         .pilot-container {
+            #navbarNav {
+                position: relative;
+                float: left;
+                margin-left: 30px;
+            }
             width: 100%;
             button {
-                margin-top: 18px;
-                display: grid;
-                margin-left: 80%;
+                width: 18px;
+                margin-top: 14px;
             }
             .pilot-navbar-nav {
+                margin-top: 15px;
                 .pilot-nav-item {
+                    padding-bottom: -20px;
                     .pilot-nav-link {
                         color: white;
                         width: 200px;
                         padding: 0;
-                        margin-left: -200px;
                         text-align: left;
+                        margin-top: -10px;
+                        font-size: 18px;
                     }
                     .cta {
                         color: #fc4ff6;

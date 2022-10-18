@@ -1,5 +1,4 @@
 .be-part{
-    background-image: url("../../../assets/images/background-image/blur.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -78,9 +77,6 @@
 @media screen and (max-width: 800px) {
     .be-part{
         margin-top: -100px;
-        background-image: url("../../../assets/images/bg300.png");
-        background-repeat: no-repeat;
-        // background-size: cover;
         padding-left: 3vw;
         padding-right: 3vw;
         h2{

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
+import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'code-of-conduct',
     component: CodeOfConductComponent
+  },
+  {
+    path: 'who-we-are',
+    component: WhoWeAreComponent
   },
   {
     path: '*',

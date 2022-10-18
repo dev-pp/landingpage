@@ -11,7 +11,7 @@ export class AppComponent {
   readonly menus: Array<MenuItem> = [
     {
       path: '',
-      label: 'Home',
+      label: 'Meetup',
       link: '/',
       isCTA: false
     },

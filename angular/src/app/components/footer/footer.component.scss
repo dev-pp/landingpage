@@ -1,31 +1,35 @@
 .footer{
+    width: 120rem;
     color: white;
     display: grid;
     grid-template-columns: auto auto;
-
     border-top: 1px solid transparent;
     border-image: linear-gradient(to right, #77A5FA, #FF1CF7);
+    width: 100%;
     border-image-slice: 1;
-
-    padding-left: 252px;
+    padding-left: 12vw;
     padding-top: 68px;
-
     .flex{
         display: flex;
-        margin-bottom: 104px;
-
+        margin-bottom: 3.75rem;
         p{
-            width: 603px;
-            font-size: 18px;
+            width: 30vw;
+            font-size: 1.125rem;
             margin-top: -5px;
         }
-
         .devpp{
             font-weight: 700;
-            font-size: 32px;
+            font-size: 2rem;
             line-height: 42px;
         }
-
+        .cod-conduct{
+            width: 30vw;
+            margin-left: 6.5vw;
+            a{
+                color: white;  
+                text-decoration: none;
+            }
+        }
         img{
             margin-right: 22px;
             height: 32px;
@@ -36,90 +40,108 @@
         }
         .arrow1{
             height: 32px;
+            padding-left: 26vw;
         }
         .community{
-            font-size: 18px;
-            width: 680px;
+            font-size: 1.125rem;
+            width: 39vw;
+            margin-right: 3vw;
         }
     }
-
-
-
     .arrow2{
         display: none;
     }
-
     .copyright{
         color: #514E58;
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 50px;
     }
 }
 
+// @media screen and (min-width: 550px) and (max-width: 800px) {
+//     .footer{
+//         .flex{
+//             .community{
+//                 margin-top: 0;
+//             }
+//             .arrow2{
+//                 margin-top: -12vw;
+//             }
+//         }
+//     }
+// }
+
 @media screen and (max-width: 800px) {
     .footer{
-        padding-left: 24px;
+        margin: 0;
+        padding: 0;
+        display: grid;
         grid-template-columns: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+
         .flex{
-            display: contents;
-            
+            display: block;
+            margin-left: 18vw;
+
             .cod-conduct{
                 display: none;
             }
-
-            .arrow2{
-                display: block;
-                margin-bottom: 48px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin-left: 45%;
-                width: 32px;
-            }
+            
             img{
-                margin-left: 262px;
-            }
-            p{
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 42px;
-                display: flex;
-                flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                margin-left: 25.5vw;
+                margin-top: 7vw;
+            }
+
+            .img1{
+                margin-top: 6vh;
+                margin-bottom: 5vw;
+            }
+            
+            p{
+                text-align: center;
+                margin-left: -11vw;
+                width: 100%;
+                padding-left: 7vw;
+
+                // position: absolute;
+
+                font-family: 'Chakra Petch';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                /* or 21px */
+                letter-spacing: 0.04em;
             }
             .community{
-                font-size: 16px;
+                margin-top: -8vh;
+                font-size: 1rem;
                 margin-bottom: 60px;
-                margin-left: 132px;
                 line-height: 130%;
-                width: 312px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+                width: 100%;
             }
             .copyright{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
                 color: #514E58;
-                font-size: 14px;
-                margin-bottom: 32px;
+                width: 100%;
+                font-size: 0.875rem;
+                margin-bottom: -30px;
                 text-align: center;
+                letter-spacing: 0.04em;
+                line-height: 130%;
+            }
+            .arrow1{
+                display: none;
+            }
+            .arrow2{
+                width: 32px;
+                display: block;
+                // margin-top: -10vw;
+                margin-bottom: 50px;
+                margin-left: 29vw;
+
             }
         }
-
-        .arrow1{
-            display: none;
-        }
-    
     }
 }
