@@ -17,24 +17,20 @@
     .pilot-container {
         width: 100%;
         position: relative;
-
         #navbarNav {
             position: relative;
             float: right;
             margin-right: 6vw;
         }
-
         .pilot-navbar-brand {
             display: block;
             float: left;
-
             img {
                 margin-left: 6vw;
                 margin-top: 22px;
                 margin-bottom: 26px;
             }
         }
-
         .pilot-navbar-nav {
             list-style-type: none;
             margin: 0;
@@ -45,7 +41,6 @@
                 margin-top: 22px;
                 margin-bottom: 26px;
                 margin-left: 3vw;
-
                 .pilot-nav-link {
                     margin-top: 10px;
                     display: block;
@@ -54,11 +49,9 @@
                     padding: 0.4rem;
                     text-decoration: none;
                 }
-
                 .cta {
                     color: #fc4ff6;
                 }
-
                 .pilot-nav-link:hover {
                     color: #09BFBA;
                 }
