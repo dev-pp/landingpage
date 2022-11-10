@@ -17,6 +17,16 @@ export class MenuComponent {
   @Input() titleSignUp?: string;
   @Input() menus: MenuItem[] = [];
   @Input() socialNetworks: SocialNetwork[] = [];
+  show: any;
 
+  open = false;
+
+  closed(){
+   this.open = true;
+  }
+  opned(){
+    this.open = false;
+  }
+  
   isActive = (route: string): boolean => location.href.includes(route);
 }

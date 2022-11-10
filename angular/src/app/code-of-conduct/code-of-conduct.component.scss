@@ -1,0 +1,104 @@
+body{
+    background-color:  #010814;
+}
+
+.content{
+    background-color:  #010814;
+    .bg{
+        display: none;
+    }
+    .bg2{
+        display: none;
+    }
+}
+
+.content2{
+    padding-left: 20%;
+    padding-right: 20%;
+
+    h1{
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-top: 140px;
+        margin-bottom: 80px;
+    }
+    h2{
+        color: #7589FF;
+    }
+    p{
+        color: white;
+    }
+    a{
+        color: #10E0DA;
+    }
+    img{
+        width: 100%;
+        max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content{
+
+        .desktop{
+            display: none;
+        }
+    
+        .bg{
+            display: inline;
+            margin-top: -220px;
+            width: 100%;
+            margin-bottom: -300px;
+        } 
+        .bg2{
+            display: inline;
+            width: 100%;
+            margin-bottom: -720px;
+        } 
+
+        margin-bottom: -120px;
+        .content2{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        h1{
+            align-items: center;
+            width: 312px;
+            height: 24px;
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        p{
+            text-align: left;
+            width: 312px;
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.72px;
+            color: #FFFFFF;
+        }
+    }
+
+
+    
+}

@@ -1,53 +1,163 @@
 .pilot-navbar {
-    background-color: black;
-    height: 104px;
-
-    .social-icons{
-        img{
+    background-color: #010814;
+    width: 100%;
+    button {
+        float:right;
+        margin: 30px 20px;
+    }
+    .none {
+        display: none;
+    }
+    .social-icons {
+        img {
             width: 20px;
             margin: 14px;
-            margin-top: 29px;
         }
     }
     .pilot-container {
+        width: 100%;
+        position: relative;
+        #navbarNav {
+            position: relative;
+            float: right;
+            margin-right: 6vw;
+        }
         .pilot-navbar-brand {
             display: block;
             float: left;
-
             img {
-                margin-left: 240px;
+                margin-left: 6vw;
                 margin-top: 22px;
                 margin-bottom: 26px;
             }
         }
-
         .pilot-navbar-nav {
             list-style-type: none;
             margin: 0;
             padding: 0;
 
-            .pilot-nav-item:first-child {
-                margin-left: 272px;
-            }
             .pilot-nav-item {
                 float: left;
                 margin-top: 22px;
                 margin-bottom: 26px;
-
+                margin-left: 3vw;
                 .pilot-nav-link {
+                    margin-top: 10px;
                     display: block;
                     color: white;
                     text-align: center;
-                    padding: 14px 16px;
+                    padding: 0.4rem;
                     text-decoration: none;
                 }
-
-                .cta{
-                    color: #FC4FF6
+                .cta {
+                    color: #fc4ff6;
                 }
-
                 .pilot-nav-link:hover {
-                    background-color: #111;
+                    color: #09BFBA;
+                }
+            }
+        }
+    }
+}
+
+.navbar-expand{
+    width: 991px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .pilot-navbar {
+        .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    width: 140px;
+                }
+            }
+            .pilot-navbar-nav {
+                .pilot-nav-item {
+                    margin-left: 0.6vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .pilot-navbar {
+        .pilot-container {
+            .pilot-navbar-brand {
+                img {
+                    height: 40px;
+                    margin-top: 30px;
+                }
+            }
+            .pilot-navbar-nav {
+                .pilot-nav-item {
+                    margin-left: 0.6vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pilot-navbar {
+        background-color: #000000;
+        p{
+            font-size: 16px;
+            color: #FFFFFF;
+            margin: 12px;
+            margin-bottom: 40px;
+        }
+        .none {
+            display: block;
+            width: 120%;
+            margin-top: -70%;
+        }
+        .social-icons2{
+            width: 48px;
+            display: inline;
+            padding-left: 10px;
+            
+                img{
+                    margin-right: 32px;
+                }
+        }
+        .pilot-container {
+            #navbarNav {
+                position: relative;
+                float: left;
+                margin-left: 30px;
+            }
+            width: 100%;
+            button {
+                width: 18px;
+                margin-top: 14px;
+            }
+            .pilot-navbar-nav {
+                margin-top: 15px;
+                .pilot-nav-item {
+                    padding-bottom: -20px;
+                    .pilot-nav-link {
+                        color: white;
+                        width: 200px;
+                        padding: 0;
+                        text-align: left;
+                        margin-top: -10px;
+                        font-size: 18px;
+                    }
+                    .cta {
+                        color: #fc4ff6;
+                    }
+                }
+            }
+            .pilot-navbar-brand {
+                img {
+                    height: 40px;
+                    margin: 14px;
+                    margin-left: 24px;
+                }
+                .btn-nav {
+                    float: right;
                 }
             }
         }

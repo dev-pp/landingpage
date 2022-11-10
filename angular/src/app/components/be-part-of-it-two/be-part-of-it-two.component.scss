@@ -1,0 +1,156 @@
+.be-part{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .be-part-container{
+        .aa{
+            img{
+                padding: 12px;
+                width: 100%;
+            }
+        }
+    }
+    h2{
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: center;
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 48px;
+        letter-spacing: 0.24em;
+    }
+    h1{
+        margin-top: 80px;
+        font-size: 31.25rem;
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+    }
+    h3{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-family: 'Chakra Petch';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 33px;
+        /* identical to box height, or 138% */
+        text-align: center;
+        letter-spacing: 0.72px;
+
+        color: #FFFFFF;
+    }
+    .center{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        button{
+            text-align: center;
+            width: 348px;
+            height: 56px;
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.125rem;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            padding: 16px;
+            gap: 30px;
+            background: #485DFF;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .be-part{
+        margin-top: -100px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        h2{
+            margin: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 10vh;
+
+
+            width: 313px;
+            height: 20px;
+            left: 0px;
+            top: 0px;
+
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            /* or 26px */
+
+            text-align: center;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+
+            /* gradient-branding */
+
+            background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        h1{
+            padding: 0;
+            margin: 0;
+            margin-left: 50px;
+            width: 321px;
+            font-size: 6.25rem;
+        }
+        h3{
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+
+            width: 311px;
+
+            font-family: 'Chakra Petch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            /* or 23px */
+
+            text-align: center;
+            letter-spacing: 0.72px;
+
+            color: #FFFFFF;
+        }
+        .center{
+            
+            button{
+                padding: 16px 24px;
+                gap: 30px;
+                font-weight: 500;
+                font-size: 1rem;
+                margin-bottom: 420px;
+                width: 312px;
+                height: 53px;
+            }
+        }
+        .be-part-container{
+            margin-top: 80px;
+            margin-bottom: -100px;
+        }
+    }
+}

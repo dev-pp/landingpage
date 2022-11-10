@@ -3,12 +3,12 @@
     
     .container{
         display: flex;
-        margin-left: 363px;
+        margin-left: 20vw;
         margin-bottom: 272px;
 
         h1{
             font-weight: 700;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 120%;
             letter-spacing: 0.16em;
             width: 330px;
@@ -23,7 +23,7 @@
         p{
             padding-top: 22px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 140%;
             letter-spacing: 0.72px;
             width: 296px;
@@ -46,7 +46,7 @@
 
                 p{
                     text-transform: uppercase;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     width: 180px;
                     display: flex;
                     flex-direction: column;
@@ -74,7 +74,30 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1550px) {
+    .digital-media{        
+        .container{
+            display: flex;
+            margin-left: 8vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .digital-media{        
+        .container{
+            display: flex;
+            margin-left: 8vw;
+            .social-icons{
+                .icons-box{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .digital-media{
         display: none;
     }
